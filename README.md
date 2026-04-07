@@ -1,52 +1,183 @@
-🔗 SupplyChain Agent 
+# 🔗 SupplyChain Agent
 
-An AI-powered supply chain co-pilot built with n8n + Claude — zero infrastructure required.  
+**The AI-powered supply chain co-pilot built with n8n + Claude — zero infrastructure required.**
 
-Features • Architecture • Getting Started • Workflows • Data Model • Personas • Roadmap • Contributing • License  
+[](https://www.google.com/search?q=https://opensource.org/licenses/MIT)
+[](https://www.google.com/search?q=https://n8n.io/)
+[](https://www.google.com/search?q=https://anthropic.com)
+[](https://www.google.com/search?q=%23-roadmap)
 
- 
+Stop drowning in "spreadsheet hell." **SupplyChain Agent** is a lightweight, autonomous management system that uses **n8n workflows** as the engine and **Claude (Anthropic)** as the brain to monitor inventory, forecast demand, and manage suppliers using the files you already have.
 
- 
+[Features](https://www.google.com/search?q=%23-features) • [Architecture](https://www.google.com/search?q=%23-architecture) • [Getting Started](https://www.google.com/search?q=%23-getting-started) • [Data Model](https://www.google.com/search?q=%23-data-model) • [Personas](https://www.google.com/search?q=%23-personas) • [Roadmap](https://www.google.com/search?q=%23-roadmap)
 
-🧠 What Is This? 
+-----
 
-SupplyChain Agent is an MVP supply chain management system powered by AI. It uses n8n workflows as the orchestration engine and Claude (Anthropic) as the reasoning layer to monitor inventory, forecast demand, manage suppliers, track logistics, detect risks, automate procurement, and coordinate communication — all from Excel/CSV files and PDFs as input. 
+## 🧠 What Is This?
 
-No databases. No custom APIs. No cloud infrastructure. Just spreadsheets, an LLM, and smart automation. 
+SupplyChain Agent is an MVP orchestration layer for modern logistics. It bypasses the need for complex ERP integrations or expensive cloud infrastructure by using **Google Sheets as a database** and **LLMs for reasoning**.
 
-Excel/PDF  ──→  n8n Workflows  ──→  Claude LLM  ──→  Alerts, Reports, Actions 
-  
+**The Logic:**
+`Excel/PDF Input` ──→ `n8n Workflows` ──→ `Claude LLM Analysis` ──→ `Automated Actions/Alerts`
 
- 
+### Key Highlights
 
-✨ Features 
+  * 🚫 **Zero Infrastructure:** No databases or servers to manage.
+  * 📊 **File-Based:** Works with the Excel and PDF files your team uses daily.
+  * 🧠 **LLM Reasoning:** Claude doesn't just move data; it analyzes risks and drafts POs.
+  * 👤 **Persona-Based:** Tailored briefings for Managers, Procurement, and C-Suite.
+  * 💰 **Low Cost:** Full operations for less than **$85/month**.
 
-7 Autonomous Agent Modules 
+-----
 
-# 
-Agent 
-What It Does 
-1 
-Demand Forecasting 
-Predicts future demand per SKU using sales history, flags anomalies, supports what-if scenarios 
-2 
-Inventory Optimization 
-Monitors stock health, calculates dynamic reorder points, triggers replenishment, detects dead stock 
-3 
-Supplier Management 
-Scores suppliers on delivery/quality/cost, identifies risks, flags contract expirations 
-4 
-Logistics Monitoring 
-Tracks shipments, predicts delays, recommends rerouting and escalation actions 
-5 
-Risk & Disruption 
-Scans external threats (weather, geopolitical, port congestion) and maps to your supply chain 
-6 
-Procurement 
-Auto-generates POs from inventory triggers, recommends suppliers, manages approval workflows 
-7 
-Communication 
-Sends persona-specific daily briefings, routes alerts, maintains decision audit trails 
+## ✨ Features
+
+### 7 Autonomous Agent Modules
+
+| \# | Agent | Primary Function |
+| :--- | :--- | :--- |
+| 1 | **Demand Forecasting** | Predicts SKU demand via sales history & flags anomalies. |
+| 2 | **Inventory Optimization** | Monitors stock health & calculates dynamic reorder points. |
+| 3 | **Supplier Management** | Scores performance & flags contract/risk issues. |
+| 4 | **Logistics Monitoring** | Tracks shipments & predicts delays/rerouting needs. |
+| 5 | **Risk & Disruption** | Scans external threats (weather/geopolitics) vs. your supply chain. |
+| 6 | **Procurement** | Auto-generates PO drafts and manages approval flows. |
+| 7 | **Communication** | Routes daily briefings and alerts to specific team personas. |
+
+-----
+
+## 🏗️ Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                      TRIGGER LAYER                          │
+│          Schedule / Email / Webhook / Manual                │
+└─────────────┬───────────────────────────────┬───────────────┘
+              │                               │
+              ▼                               ▼
+┌──────────────────────┐       ┌──────────────────────────┐
+│   DATA INGESTION     │       │       PDF PARSER         │
+│   Excel / CSV /      │       │   Extract text via       │
+│   Google Sheets      │       │   n8n PDF node + LLM     │
+└──────────┬───────────┘       └────────────┬─────────────┘
+           │                                │
+           ▼                                ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    LLM REASONING LAYER                      │
+│            Claude (Anthropic) via n8n AI Nodes              │
+│       Structured prompts → JSON analysis → Decisions        │
+└─────────────────────────┬───────────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────┐
+│                       OUTPUT LAYER                          │
+│     Google Sheets │ Email │ Slack │ Excel Reports           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+-----
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+  * **n8n Instance:** [Cloud](https://www.google.com/search?q=https://n8n.io) or self-hosted.
+  * **Anthropic API Key:** For Claude access ([Get it here](https://www.google.com/search?q=https://console.anthropic.com)).
+  * **Google Account:** For Sheets and Drive storage.
+
+### Step 1: Clone & Setup
+
+```bash
+git clone https://github.com/yourusername/supplychain-agent.git
+cd supplychain-agent
+```
+
+### Step 2: Google Sheets "Database"
+
+1.  Open `templates/google_sheets_template.xlsx`.
+2.  Upload it to Google Sheets.
+3.  Share the sheet with your n8n service account email.
+
+### Step 3: Import Workflows
+
+1.  In n8n, go to **Workflows \> Import**.
+2.  Import all JSON files from the `workflows/` folder.
+3.  Configure your **Credentials** for Anthropic, Google Sheets, and Slack/Gmail.
+
+### Step 4: Run Schedule
+
+Enable the workflows. They are pre-configured to run throughout the day (e.g., Risk check at 6:00 AM, End-of-day briefings at 6:00 PM).
+
+-----
+
+## 📊 Data Model (Core Inputs)
+
+| File | Key Columns | Purpose |
+| :--- | :--- | :--- |
+| `inventory_master` | SKU\_ID, Stock, Reorder\_Point, Lead\_Time | Real-time stock tracking |
+| `sales_history` | Date, SKU\_ID, Quantity\_Sold | Input for demand forecasting |
+| `supplier_master` | Supplier\_ID, On\_Time\_Rate, Risk\_Level | Performance & risk scoring |
+| `purchase_orders` | PO\_ID, Status, Expected\_Delivery | Tracking procurement lifecycle |
+
+-----
+
+## 👤 Personas
+
+The system generates tailored outputs for different roles:
+
+  * **Supply Chain Manager:** Receives health dashboards & "what-if" analyses.
+  * **Procurement Lead:** Receives PO drafts & supplier scorecards.
+  * **Logistics Coordinator:** Receives delay alerts & carrier performance data.
+  * **C-Suite:** Receives a high-level 3-KPI executive summary.
+
+-----
+
+## 🗺️ Roadmap
+
+  - [x] **v0.1:** Core 7-agent MVP (Current).
+  - [ ] **v0.2:** Statistical models (Prophet/ARIMA) + PDF auto-ingestion via email.
+  - [ ] **v0.3:** Migration to PostgreSQL + React-based dashboard interface.
+
+-----
+
+## 💰 Operating Costs
+
+| Component | Estimated Monthly Cost |
+| :--- | :--- |
+| n8n Cloud (Starter) | \~$24 |
+| Claude API (Sonnet) | ~$30–$60 |
+| Google Workspace | $0 (Base) |
+| **Total** | **~$54–$85/month\*\* |
+
+-----
+
+## ⚠️ Known Limitations
+
+  * **Not Real-Time:** Designed for batch processing (hourly/daily).
+  * **Manual Entry:** Requires Excel files to be kept up to date manually or via simple uploads.
+  * **Scale:** Optimized for companies with \<500 SKUs and \<50 suppliers.
+
+-----
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community amazing\!
+
+1.  Fork the Project.
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your Changes (`git commit -m 'Add AmazingFeature'`).
+4.  Push to the Branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+-----
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+-----
+
+*Built with ❤️ for supply chain teams tired of spreadsheet hell.*Sends persona-specific daily briefings, routes alerts, maintains decision audit trails 
 Key Highlights 
 
 🚫 Zero Infrastructure — No databases, servers, or deployments 
