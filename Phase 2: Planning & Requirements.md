@@ -1,4 +1,4 @@
-# 📦 SupplyChain Agent — Phase 2: Planning & Requirements
+# 📦 SupplyChain Agent — AI-Powered Supply Chain Co-Pilot
 
 This document serves as the central repository for the **Planning & Requirements** phase of the SupplyChain Agent project. It consolidates the PRD, User Stories, Prioritization, Roadmap, and Technical Feasibility into a single, comprehensive guide.
 
