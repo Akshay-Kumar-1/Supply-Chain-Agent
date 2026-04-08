@@ -14,7 +14,7 @@
 
 ## 📄 Vision Document
 
-**File:** `vision-doc.md` | **Date:** 2026-04-07
+**File:** `vision-doc.md`
 
 ### 1\. Mission
 
@@ -53,9 +53,9 @@ An AI agent system that **Ingests** (Excel/PDF), **Reasons** (Claude LLM), **Act
 
 ### 5\. 3-Year Roadmap
 
-  - **Year 1 (2026):** MVP with 7 agent modules. 50 paying customers.
-  - **Year 2 (2027):** Web dashboard, direct ERP integrations, multi-tenant architecture.
-  - **Year 3 (2028):** Autonomous OS — agents negotiate with supplier agents.
+  - **Year 1 :** MVP with 7 agent modules.
+  - **Year 2 :** Web dashboard, direct ERP integrations, multi-tenant architecture.
+  - **Year 3 :** Autonomous OS — agents negotiate with supplier agents.
 
 -----
 
@@ -73,7 +73,7 @@ An AI agent system that **Ingests** (Excel/PDF), **Reasons** (Claude LLM), **Act
 
 -----
 
-## 🎯 OKRs — Q2 2026 (April – June)
+## 🎯 OKRs
 
 **File:** `okrs.md`
 
