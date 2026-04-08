@@ -1,4 +1,4 @@
-#📦 SupplyChain Agent — AI-Powered Supply Chain Co-Pilot
+# 📦 SupplyChain Agent — AI-Powered Supply Chain Co-Pilot
 
 ## Phase 5: Launch & Go-To-Market (Directory: `/launch-and-gtm/`)
 
