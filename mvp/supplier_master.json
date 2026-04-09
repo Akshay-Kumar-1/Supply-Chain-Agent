@@ -1,0 +1,1091 @@
+{ 
+
+  "metadata": { 
+
+    "file": "supplier_master.json", 
+
+    "description": "Supplier directory with performance baselines, contracts, and risk assessment", 
+
+    "last_updated": "2026-04-07", 
+
+    "version": "1.0", 
+
+    "total_suppliers": 10, 
+
+    "currency": "INR" 
+
+  }, 
+
+  "suppliers": [ 
+
+    { 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "contact_person": "Vikram Desai", 
+
+      "contact_email": "vikram.desai@techassembly.in", 
+
+      "contact_phone": "+91-9876543210", 
+
+      "address": "Plot 45, MIDC Hinjawadi, Pune, Maharashtra 411057", 
+
+      "city": "Pune", 
+
+      "state": "Maharashtra", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-001", "SKU-008", "SKU-021", "SKU-040"], 
+
+      "categories_supplied": ["Electronics", "Finished Goods"], 
+
+      "payment_terms": "Net 30", 
+
+      "contract_start_date": "2025-04-01", 
+
+      "contract_end_date": "2026-09-30", 
+
+      "contract_value_annual_inr": 4500000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.92, 
+
+        "on_time_delivery_trend": "stable", 
+
+        "avg_lead_time_days": 16, 
+
+        "lead_time_variability_days": 3, 
+
+        "defect_rate": 0.015, 
+
+        "defect_trend": "improving", 
+
+        "order_fill_rate": 0.95, 
+
+        "responsiveness_score": 4.2, 
+
+        "total_pos_last_12_months": 48, 
+
+        "total_pos_on_time": 44, 
+
+        "total_pos_late": 4, 
+
+        "total_pos_with_defects": 3, 
+
+        "avg_defect_resolution_days": 5 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Medium", 
+
+        "last_price_review_date": "2026-01-15", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 500, 
+
+        "volume_discount_percent": 5 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Low", 
+
+        "single_source_for": [], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Strong", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-11-15", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Reliable long-term partner. Good quality, slightly premium pricing. Contract renewal in 6 months." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "contact_person": "Li Wei", 
+
+      "contact_email": "liwei@szdisplaytech.cn", 
+
+      "contact_phone": "+86-755-8888-1234", 
+
+      "address": "Building 12, Tech Park, Nanshan District, Shenzhen 518057", 
+
+      "city": "Shenzhen", 
+
+      "state": "Guangdong", 
+
+      "country": "China", 
+
+      "products_supplied": ["SKU-002", "SKU-009", "SKU-012", "SKU-017", "SKU-022", "SKU-027", "SKU-036", "SKU-039", "SKU-042", "SKU-044", "SKU-046"], 
+
+      "categories_supplied": ["Electronics", "Components"], 
+
+      "payment_terms": "Net 45", 
+
+      "contract_start_date": "2025-07-01", 
+
+      "contract_end_date": "2026-06-30", 
+
+      "contract_value_annual_inr": 8200000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.78, 
+
+        "on_time_delivery_trend": "declining", 
+
+        "avg_lead_time_days": 18, 
+
+        "lead_time_variability_days": 8, 
+
+        "defect_rate": 0.038, 
+
+        "defect_trend": "worsening", 
+
+        "order_fill_rate": 0.88, 
+
+        "responsiveness_score": 3.1, 
+
+        "total_pos_last_12_months": 72, 
+
+        "total_pos_on_time": 56, 
+
+        "total_pos_late": 16, 
+
+        "total_pos_with_defects": 8, 
+
+        "avg_defect_resolution_days": 14 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "High", 
+
+        "last_price_review_date": "2025-12-01", 
+
+        "price_trend": "increasing", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 1000, 
+
+        "volume_discount_percent": 8 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "High", 
+
+        "single_source_for": ["SKU-002", "SKU-044"], 
+
+        "geographic_risk": "Medium", 
+
+        "financial_stability": "Moderate", 
+
+        "backup_supplier_available": false, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-08-20", 
+
+        "audit_result": "Conditional Pass" 
+
+      }, 
+
+      "notes": "CONCERN — OTD declining from 89% to 78% over last 6 months. Defect rate rising. Price competitive but quality slipping. Only source for SKU-002 and SKU-044. Contract expiring in 3 months — critical renegotiation needed. Language barrier causes communication delays." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-003", 
+
+      "supplier_name": "Bharat ElectroMaterials Ltd", 
+
+      "contact_person": "Arun Nair", 
+
+      "contact_email": "arun.nair@bharatematerials.com", 
+
+      "contact_phone": "+91-44-28765432", 
+
+      "address": "12 Industrial Estate, Ambattur, Chennai, Tamil Nadu 600058", 
+
+      "city": "Chennai", 
+
+      "state": "Tamil Nadu", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-003", "SKU-006", "SKU-010", "SKU-013", "SKU-016", "SKU-023", "SKU-031", "SKU-037"], 
+
+      "categories_supplied": ["Raw Materials", "Components"], 
+
+      "payment_terms": "Net 30", 
+
+      "contract_start_date": "2025-01-01", 
+
+      "contract_end_date": "2026-12-31", 
+
+      "contract_value_annual_inr": 3200000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.94, 
+
+        "on_time_delivery_trend": "stable", 
+
+        "avg_lead_time_days": 6, 
+
+        "lead_time_variability_days": 2, 
+
+        "defect_rate": 0.008, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.98, 
+
+        "responsiveness_score": 4.5, 
+
+        "total_pos_last_12_months": 96, 
+
+        "total_pos_on_time": 90, 
+
+        "total_pos_late": 6, 
+
+        "total_pos_with_defects": 2, 
+
+        "avg_defect_resolution_days": 3 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Medium", 
+
+        "last_price_review_date": "2026-02-01", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": false, 
+
+        "volume_discount_threshold": null, 
+
+        "volume_discount_percent": null 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Low", 
+
+        "single_source_for": [], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Strong", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2026-01-10", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Best overall supplier. Fast delivery, low defects, highly responsive. Consider increasing volume share." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-004", 
+
+      "supplier_name": "PackRight Solutions", 
+
+      "contact_person": "Meera Joshi", 
+
+      "contact_email": "meera@packright.in", 
+
+      "contact_phone": "+91-20-24567890", 
+
+      "address": "Survey 78, Chakan MIDC, Pune, Maharashtra 410501", 
+
+      "city": "Pune", 
+
+      "state": "Maharashtra", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-004", "SKU-014", "SKU-024", "SKU-048"], 
+
+      "categories_supplied": ["Packaging"], 
+
+      "payment_terms": "Net 15", 
+
+      "contract_start_date": "2025-06-01", 
+
+      "contract_end_date": "2026-05-31", 
+
+      "contract_value_annual_inr": 1100000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.96, 
+
+        "on_time_delivery_trend": "improving", 
+
+        "avg_lead_time_days": 4, 
+
+        "lead_time_variability_days": 1, 
+
+        "defect_rate": 0.005, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.99, 
+
+        "responsiveness_score": 4.8, 
+
+        "total_pos_last_12_months": 36, 
+
+        "total_pos_on_time": 35, 
+
+        "total_pos_late": 1, 
+
+        "total_pos_with_defects": 0, 
+
+        "avg_defect_resolution_days": 1 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "High", 
+
+        "last_price_review_date": "2025-11-15", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 5000, 
+
+        "volume_discount_percent": 10 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Low", 
+
+        "single_source_for": [], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Strong", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-10-05", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Excellent packaging supplier. Contract expiring next month — negotiate renewal with volume discount." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-005", 
+
+      "supplier_name": "GlobalChip Semiconductor Inc", 
+
+      "contact_person": "David Chen", 
+
+      "contact_email": "david.chen@globalchip.com.tw", 
+
+      "contact_phone": "+886-2-2765-4321", 
+
+      "address": "8F, No. 168, Sec 2, Nanjing E Rd, Taipei 10457", 
+
+      "city": "Taipei", 
+
+      "state": "Taiwan", 
+
+      "country": "Taiwan", 
+
+      "products_supplied": ["SKU-005", "SKU-011", "SKU-015", "SKU-025"], 
+
+      "categories_supplied": ["Electronics", "Components"], 
+
+      "payment_terms": "Net 60", 
+
+      "contract_start_date": "2025-03-01", 
+
+      "contract_end_date": "2027-02-28", 
+
+      "contract_value_annual_inr": 6500000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.85, 
+
+        "on_time_delivery_trend": "declining", 
+
+        "avg_lead_time_days": 26, 
+
+        "lead_time_variability_days": 7, 
+
+        "defect_rate": 0.012, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.90, 
+
+        "responsiveness_score": 3.5, 
+
+        "total_pos_last_12_months": 24, 
+
+        "total_pos_on_time": 20, 
+
+        "total_pos_late": 4, 
+
+        "total_pos_with_defects": 1, 
+
+        "avg_defect_resolution_days": 10 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Low", 
+
+        "last_price_review_date": "2025-09-01", 
+
+        "price_trend": "increasing", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 200, 
+
+        "volume_discount_percent": 3 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Medium", 
+
+        "single_source_for": ["SKU-005", "SKU-015"], 
+
+        "geographic_risk": "High", 
+
+        "financial_stability": "Strong", 
+
+        "backup_supplier_available": false, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-07-20", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Critical semiconductor supplier. Long lead times, high geographic risk (Taiwan strait tensions). Only source for SKU-005 and SKU-015. OTD declining — monitor closely. Need to qualify alternative supplier urgently." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-006", 
+
+      "supplier_name": "Precision Components Pvt Ltd", 
+
+      "contact_person": "Suresh Kumar", 
+
+      "contact_email": "suresh@precisioncomp.in", 
+
+      "contact_phone": "+91-80-41234567", 
+
+      "address": "Unit 22, Peenya Industrial Area, Bangalore, Karnataka 560058", 
+
+      "city": "Bangalore", 
+
+      "state": "Karnataka", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-007", "SKU-018", "SKU-026", "SKU-032", "SKU-033", "SKU-041", "SKU-045"], 
+
+      "categories_supplied": ["Components"], 
+
+      "payment_terms": "Net 30", 
+
+      "contract_start_date": "2025-09-01", 
+
+      "contract_end_date": "2026-08-31", 
+
+      "contract_value_annual_inr": 2800000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.72, 
+
+        "on_time_delivery_trend": "declining", 
+
+        "avg_lead_time_days": 12, 
+
+        "lead_time_variability_days": 6, 
+
+        "defect_rate": 0.042, 
+
+        "defect_trend": "worsening", 
+
+        "order_fill_rate": 0.82, 
+
+        "responsiveness_score": 2.8, 
+
+        "total_pos_last_12_months": 60, 
+
+        "total_pos_on_time": 43, 
+
+        "total_pos_late": 17, 
+
+        "total_pos_with_defects": 9, 
+
+        "avg_defect_resolution_days": 12 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "High", 
+
+        "last_price_review_date": "2025-12-10", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": false, 
+
+        "volume_discount_threshold": null, 
+
+        "volume_discount_percent": null 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "High", 
+
+        "single_source_for": [], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Moderate", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": false, 
+
+        "last_audit_date": "2025-06-15", 
+
+        "audit_result": "Fail — Corrective Action Required" 
+
+      }, 
+
+      "notes": "PROBLEM SUPPLIER — OTD dropped from 88% to 72%. Defects rising. Failed last audit. Cheap but unreliable. SKU-032 stockout caused by their delayed delivery. Recommend reducing volume share and qualifying alternatives." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-007", 
+
+      "supplier_name": "MechaTronics Manufacturing", 
+
+      "contact_person": "Ankit Patel", 
+
+      "contact_email": "ankit@mechatronics.co.in", 
+
+      "contact_phone": "+91-79-26543210", 
+
+      "address": "G-12, Vatva GIDC, Ahmedabad, Gujarat 382440", 
+
+      "city": "Ahmedabad", 
+
+      "state": "Gujarat", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-028", "SKU-030", "SKU-034", "SKU-035", "SKU-049"], 
+
+      "categories_supplied": ["Components", "Finished Goods"], 
+
+      "payment_terms": "Net 30", 
+
+      "contract_start_date": "2025-05-01", 
+
+      "contract_end_date": "2026-04-30", 
+
+      "contract_value_annual_inr": 5200000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.89, 
+
+        "on_time_delivery_trend": "stable", 
+
+        "avg_lead_time_days": 18, 
+
+        "lead_time_variability_days": 4, 
+
+        "defect_rate": 0.022, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.93, 
+
+        "responsiveness_score": 3.8, 
+
+        "total_pos_last_12_months": 36, 
+
+        "total_pos_on_time": 32, 
+
+        "total_pos_late": 4, 
+
+        "total_pos_with_defects": 3, 
+
+        "avg_defect_resolution_days": 7 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Medium", 
+
+        "last_price_review_date": "2026-01-20", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 100, 
+
+        "volume_discount_percent": 4 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Medium", 
+
+        "single_source_for": ["SKU-028"], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Moderate", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-09-10", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Good for mechanical/motor components. Contract expiring this month — renew immediately. Single source for SKU-028 (enclosures)." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-008", 
+
+      "supplier_name": "Dongguan ElectroSource Trading", 
+
+      "contact_person": "Zhang Ming", 
+
+      "contact_email": "zhang.ming@dg-electrosource.cn", 
+
+      "contact_phone": "+86-769-2234-5678", 
+
+      "address": "Rm 808, Dongcheng Business Center, Dongguan, Guangdong 523000", 
+
+      "city": "Dongguan", 
+
+      "state": "Guangdong", 
+
+      "country": "China", 
+
+      "products_supplied": ["SKU-001", "SKU-012", "SKU-017", "SKU-022", "SKU-027", "SKU-036", "SKU-046"], 
+
+      "categories_supplied": ["Electronics"], 
+
+      "payment_terms": "Net 45", 
+
+      "contract_start_date": "2026-01-01", 
+
+      "contract_end_date": "2026-12-31", 
+
+      "contract_value_annual_inr": 2100000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.83, 
+
+        "on_time_delivery_trend": "improving", 
+
+        "avg_lead_time_days": 20, 
+
+        "lead_time_variability_days": 5, 
+
+        "defect_rate": 0.025, 
+
+        "defect_trend": "improving", 
+
+        "order_fill_rate": 0.91, 
+
+        "responsiveness_score": 3.4, 
+
+        "total_pos_last_12_months": 18, 
+
+        "total_pos_on_time": 15, 
+
+        "total_pos_late": 3, 
+
+        "total_pos_with_defects": 2, 
+
+        "avg_defect_resolution_days": 10 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "High", 
+
+        "last_price_review_date": "2025-12-15", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 500, 
+
+        "volume_discount_percent": 6 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Medium", 
+
+        "single_source_for": [], 
+
+        "geographic_risk": "Medium", 
+
+        "financial_stability": "Moderate", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2025-11-28", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Secondary/backup supplier for Chinese electronics. Improving trend. Good alternative to SUP-002 as their quality issues worsen." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-009", 
+
+      "supplier_name": "ChemTech Specialty Materials", 
+
+      "contact_person": "Deepa Sharma", 
+
+      "contact_email": "deepa.sharma@chemtechspec.com", 
+
+      "contact_phone": "+91-22-67890123", 
+
+      "address": "Plot D-15, TTC Industrial Area, Navi Mumbai, Maharashtra 400705", 
+
+      "city": "Navi Mumbai", 
+
+      "state": "Maharashtra", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-003", "SKU-013", "SKU-019", "SKU-023", "SKU-029", "SKU-031", "SKU-043", "SKU-047", "SKU-050"], 
+
+      "categories_supplied": ["Raw Materials"], 
+
+      "payment_terms": "Net 30", 
+
+      "contract_start_date": "2025-08-01", 
+
+      "contract_end_date": "2026-07-31", 
+
+      "contract_value_annual_inr": 1800000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.91, 
+
+        "on_time_delivery_trend": "stable", 
+
+        "avg_lead_time_days": 7, 
+
+        "lead_time_variability_days": 2, 
+
+        "defect_rate": 0.010, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.96, 
+
+        "responsiveness_score": 4.0, 
+
+        "total_pos_last_12_months": 54, 
+
+        "total_pos_on_time": 49, 
+
+        "total_pos_late": 5, 
+
+        "total_pos_with_defects": 2, 
+
+        "avg_defect_resolution_days": 4 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Medium", 
+
+        "last_price_review_date": "2026-02-15", 
+
+        "price_trend": "increasing", 
+
+        "volume_discount_available": false, 
+
+        "volume_discount_threshold": null, 
+
+        "volume_discount_percent": null 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Low", 
+
+        "single_source_for": ["SKU-019", "SKU-029", "SKU-043", "SKU-047", "SKU-050"], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Strong", 
+
+        "backup_supplier_available": false, 
+
+        "iso_certified": true, 
+
+        "last_audit_date": "2026-02-05", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Reliable raw materials supplier. BUT single source for 5 SKUs — significant concentration risk. Need to qualify backup for specialty chemicals." 
+
+    }, 
+
+    { 
+
+      "supplier_id": "SUP-010", 
+
+      "supplier_name": "QuickPack Distributors", 
+
+      "contact_person": "Rahul Mehta", 
+
+      "contact_email": "rahul@quickpackdist.in", 
+
+      "contact_phone": "+91-11-43216789", 
+
+      "address": "A-45, Okhla Phase II, New Delhi 110020", 
+
+      "city": "New Delhi", 
+
+      "state": "Delhi", 
+
+      "country": "India", 
+
+      "products_supplied": ["SKU-004", "SKU-024", "SKU-038", "SKU-048"], 
+
+      "categories_supplied": ["Packaging"], 
+
+      "payment_terms": "Net 15", 
+
+      "contract_start_date": "2025-10-01", 
+
+      "contract_end_date": "2026-09-30", 
+
+      "contract_value_annual_inr": 650000, 
+
+      "performance": { 
+
+        "on_time_delivery_rate": 0.88, 
+
+        "on_time_delivery_trend": "stable", 
+
+        "avg_lead_time_days": 5, 
+
+        "lead_time_variability_days": 2, 
+
+        "defect_rate": 0.018, 
+
+        "defect_trend": "stable", 
+
+        "order_fill_rate": 0.94, 
+
+        "responsiveness_score": 3.6, 
+
+        "total_pos_last_12_months": 24, 
+
+        "total_pos_on_time": 21, 
+
+        "total_pos_late": 3, 
+
+        "total_pos_with_defects": 1, 
+
+        "avg_defect_resolution_days": 3 
+
+      }, 
+
+      "pricing": { 
+
+        "competitiveness": "Medium", 
+
+        "last_price_review_date": "2025-10-15", 
+
+        "price_trend": "stable", 
+
+        "volume_discount_available": true, 
+
+        "volume_discount_threshold": 3000, 
+
+        "volume_discount_percent": 7 
+
+      }, 
+
+      "risk": { 
+
+        "risk_level": "Low", 
+
+        "single_source_for": ["SKU-038"], 
+
+        "geographic_risk": "Low", 
+
+        "financial_stability": "Moderate", 
+
+        "backup_supplier_available": true, 
+
+        "iso_certified": false, 
+
+        "last_audit_date": "2025-10-20", 
+
+        "audit_result": "Pass" 
+
+      }, 
+
+      "notes": "Secondary packaging supplier. Decent performance, serves Delhi/North region primarily." 
+
+    } 
+
+  ], 
+
+  "supplier_score_weights": { 
+
+    "on_time_delivery": 0.30, 
+
+    "quality_defect_rate": 0.25, 
+
+    "price_competitiveness": 0.20, 
+
+    "lead_time_consistency": 0.15, 
+
+    "responsiveness": 0.10 
+
+  }, 
+
+  "risk_summary": { 
+
+    "high_risk_suppliers": ["SUP-002", "SUP-006"], 
+
+    "contracts_expiring_within_60_days": ["SUP-004", "SUP-007"], 
+
+    "single_source_dependencies": { 
+
+      "SUP-002": ["SKU-002", "SKU-044"], 
+
+      "SUP-005": ["SKU-005", "SKU-015"], 
+
+      "SUP-007": ["SKU-028"], 
+
+      "SUP-009": ["SKU-019", "SKU-029", "SKU-043", "SKU-047", "SKU-050"], 
+
+      "SUP-010": ["SKU-038"] 
+
+    }, 
+
+    "total_single_source_skus": 11, 
+
+    "geographic_concentration": { 
+
+      "India": ["SUP-001", "SUP-003", "SUP-004", "SUP-006", "SUP-007", "SUP-009", "SUP-010"], 
+
+      "China": ["SUP-002", "SUP-008"], 
+
+      "Taiwan": ["SUP-005"] 
+
+    } 
+
+  } 
+
+} 
