@@ -1,0 +1,957 @@
+{ 
+
+  "metadata": { 
+
+    "file": "purchase_orders.json", 
+
+    "description": "All purchase orders — open, in-transit, delivered, and overdue", 
+
+    "last_updated": "2026-04-07", 
+
+    "version": "1.0", 
+
+    "currency": "INR", 
+
+    "statuses": ["Draft", "Approved", "Sent", "Confirmed", "In Transit", "Delivered", "Overdue", "Cancelled"], 
+
+    "total_pos": 25 
+
+  }, 
+
+  "purchase_orders": [ 
+
+    { 
+
+      "po_id": "PO-2026-030", 
+
+      "sku_id": "SKU-008", 
+
+      "sku_name": "Smart Controller Unit v3", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 80, 
+
+      "unit_cost": 4800.00, 
+
+      "total_cost": 384000.00, 
+
+      "order_date": "2026-02-15", 
+
+      "expected_delivery": "2026-03-05", 
+
+      "actual_delivery": "2026-03-04", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-15", 
+
+      "notes": "Delivered on time. Quality OK." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-031", 
+
+      "sku_id": "SKU-012", 
+
+      "sku_name": "Sensor Module IR Proximity", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 200, 
+
+      "unit_cost": 280.00, 
+
+      "total_cost": 56000.00, 
+
+      "order_date": "2026-02-18", 
+
+      "expected_delivery": "2026-03-10", 
+
+      "actual_delivery": "2026-03-18", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-18", 
+
+      "notes": "Delivered 8 DAYS LATE. 5 units defective. Issue raised with supplier." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-032", 
+
+      "sku_id": "SKU-003", 
+
+      "sku_name": "Copper Wire Spool 1.5mm", 
+
+      "supplier_id": "SUP-003", 
+
+      "supplier_name": "Bharat ElectroMaterials Ltd", 
+
+      "quantity": 1000, 
+
+      "unit_cost": 85.00, 
+
+      "total_cost": 85000.00, 
+
+      "order_date": "2026-02-20", 
+
+      "expected_delivery": "2026-02-27", 
+
+      "actual_delivery": "2026-02-26", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-20", 
+
+      "notes": "Early delivery. Perfect quality." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-033", 
+
+      "sku_id": "SKU-004", 
+
+      "sku_name": "Corrugated Box 30x20x15cm", 
+
+      "supplier_id": "SUP-004", 
+
+      "supplier_name": "PackRight Solutions", 
+
+      "quantity": 5000, 
+
+      "unit_cost": 18.50, 
+
+      "total_cost": 92500.00, 
+
+      "order_date": "2026-02-22", 
+
+      "expected_delivery": "2026-02-27", 
+
+      "actual_delivery": "2026-02-27", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-22", 
+
+      "notes": "On time. Good quality." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-034", 
+
+      "sku_id": "SKU-017", 
+
+      "sku_name": "WiFi Module ESP32", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 300, 
+
+      "unit_cost": 195.00, 
+
+      "total_cost": 58500.00, 
+
+      "order_date": "2026-02-25", 
+
+      "expected_delivery": "2026-03-15", 
+
+      "actual_delivery": "2026-03-22", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-25", 
+
+      "notes": "Delivered 7 DAYS LATE. 12 units defective (4%). Supplier blamed shipping delays." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-035", 
+
+      "sku_id": "SKU-015", 
+
+      "sku_name": "Microcontroller STM32F4", 
+
+      "supplier_id": "SUP-005", 
+
+      "supplier_name": "GlobalChip Semiconductor Inc", 
+
+      "quantity": 300, 
+
+      "unit_cost": 890.00, 
+
+      "total_cost": 267000.00, 
+
+      "order_date": "2026-03-01", 
+
+      "expected_delivery": "2026-03-31", 
+
+      "actual_delivery": null, 
+
+      "status": "Overdue", 
+
+      "urgency": "Critical", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-01", 
+
+      "notes": "OVERDUE by 7 days. Supplier says customs delay in Taiwan. ETA unknown. CRITICAL — SKU-015 stock at 28 units only." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-036", 
+
+      "sku_id": "SKU-018", 
+
+      "sku_name": "Relay Module 5V 4-Channel", 
+
+      "supplier_id": "SUP-006", 
+
+      "supplier_name": "Precision Components Pvt Ltd", 
+
+      "quantity": 200, 
+
+      "unit_cost": 145.00, 
+
+      "total_cost": 29000.00, 
+
+      "order_date": "2026-02-28", 
+
+      "expected_delivery": "2026-03-10", 
+
+      "actual_delivery": null, 
+
+      "status": "Overdue", 
+
+      "urgency": "Critical", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-02-28", 
+
+      "notes": "OVERDUE by 28 days!! Supplier says production issues. No confirmed new ETA. SKU-018 is at ZERO stock. Production line 2 stopped." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-037", 
+
+      "sku_id": "SKU-021", 
+
+      "sku_name": "Circuit Board Assembly B2", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 150, 
+
+      "unit_cost": 980.00, 
+
+      "total_cost": 147000.00, 
+
+      "order_date": "2026-03-05", 
+
+      "expected_delivery": "2026-03-21", 
+
+      "actual_delivery": "2026-03-23", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-05", 
+
+      "notes": "2 days late but acceptable. Quality good." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-038", 
+
+      "sku_id": "SKU-005", 
+
+      "sku_name": "Lithium Battery Pack 3.7V 5000mAh", 
+
+      "supplier_id": "SUP-005", 
+
+      "supplier_name": "GlobalChip Semiconductor Inc", 
+
+      "quantity": 200, 
+
+      "unit_cost": 420.00, 
+
+      "total_cost": 84000.00, 
+
+      "order_date": "2026-03-08", 
+
+      "expected_delivery": "2026-04-05", 
+
+      "actual_delivery": null, 
+
+      "status": "Overdue", 
+
+      "urgency": "Critical", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-08", 
+
+      "notes": "OVERDUE by 2 days. Same Taiwan customs issue as PO-035. SKU-005 at 12 units — CRITICAL. Demand is 35-42/week." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-039", 
+
+      "sku_id": "SKU-013", 
+
+      "sku_name": "Solder Wire 60/40 500g", 
+
+      "supplier_id": "SUP-003", 
+
+      "supplier_name": "Bharat ElectroMaterials Ltd", 
+
+      "quantity": 100, 
+
+      "unit_cost": 320.00, 
+
+      "total_cost": 32000.00, 
+
+      "order_date": "2026-03-10", 
+
+      "expected_delivery": "2026-03-17", 
+
+      "actual_delivery": "2026-03-16", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-10", 
+
+      "notes": "Early delivery. Good." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-040", 
+
+      "sku_id": "SKU-032", 
+
+      "sku_name": "Transformer 220V to 12V 10A", 
+
+      "supplier_id": "SUP-006", 
+
+      "supplier_name": "Precision Components Pvt Ltd", 
+
+      "quantity": 100, 
+
+      "unit_cost": 680.00, 
+
+      "total_cost": 68000.00, 
+
+      "order_date": "2026-03-10", 
+
+      "expected_delivery": "2026-03-22", 
+
+      "actual_delivery": null, 
+
+      "status": "Overdue", 
+
+      "urgency": "Critical", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-10", 
+
+      "notes": "OVERDUE by 16 days. Same supplier as PO-036 — SUP-006 having systemic issues. SKU-032 at ZERO. Assembly line 3 blocked." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-041", 
+
+      "sku_id": "SKU-009", 
+
+      "sku_name": "USB-C Connector Module", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 500, 
+
+      "unit_cost": 32.00, 
+
+      "total_cost": 16000.00, 
+
+      "order_date": "2026-03-12", 
+
+      "expected_delivery": "2026-03-26", 
+
+      "actual_delivery": "2026-04-02", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-12", 
+
+      "notes": "7 days late. Becoming a pattern with SUP-002." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-042", 
+
+      "sku_id": "SKU-001", 
+
+      "sku_name": "Circuit Board Assembly A1", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 500, 
+
+      "unit_cost": 1250.00, 
+
+      "total_cost": 625000.00, 
+
+      "order_date": "2026-03-15", 
+
+      "expected_delivery": "2026-04-01", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "High", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-15", 
+
+      "notes": "In transit — shipped March 28. Expected arrival by April 10. SKU-001 at 45 units only with demand of 150+/week. URGENT." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-043", 
+
+      "sku_id": "SKU-025", 
+
+      "sku_name": "Motor Driver IC L298N", 
+
+      "supplier_id": "SUP-005", 
+
+      "supplier_name": "GlobalChip Semiconductor Inc", 
+
+      "quantity": 400, 
+
+      "unit_cost": 125.00, 
+
+      "total_cost": 50000.00, 
+
+      "order_date": "2026-03-18", 
+
+      "expected_delivery": "2026-04-15", 
+
+      "actual_delivery": null, 
+
+      "status": "Confirmed", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-18", 
+
+      "notes": "Confirmed by supplier. Current stock is healthy (680 units) so not urgent." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-044", 
+
+      "sku_id": "SKU-030", 
+
+      "sku_name": "Industrial IoT Gateway v1", 
+
+      "supplier_id": "SUP-007", 
+
+      "supplier_name": "MechaTronics Manufacturing", 
+
+      "quantity": 20, 
+
+      "unit_cost": 12500.00, 
+
+      "total_cost": 250000.00, 
+
+      "order_date": "2026-03-15", 
+
+      "expected_delivery": "2026-04-10", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "High", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-15", 
+
+      "notes": "In transit. Only 18 units in stock with demand of 5/week. Cutting it close." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-045", 
+
+      "sku_id": "SKU-008", 
+
+      "sku_name": "Smart Controller Unit v3", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 100, 
+
+      "unit_cost": 4800.00, 
+
+      "total_cost": 480000.00, 
+
+      "order_date": "2026-03-22", 
+
+      "expected_delivery": "2026-04-08", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-22", 
+
+      "notes": "In transit. Tracking shows on schedule." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-046", 
+
+      "sku_id": "SKU-040", 
+
+      "sku_name": "Smart Power Monitor v1", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 50, 
+
+      "unit_cost": 3800.00, 
+
+      "total_cost": 190000.00, 
+
+      "order_date": "2026-03-22", 
+
+      "expected_delivery": "2026-04-08", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-22", 
+
+      "notes": "In transit with PO-045 (same supplier)." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-047", 
+
+      "sku_id": "SKU-034", 
+
+      "sku_name": "Stepper Motor NEMA 17", 
+
+      "supplier_id": "SUP-007", 
+
+      "supplier_name": "MechaTronics Manufacturing", 
+
+      "quantity": 100, 
+
+      "unit_cost": 420.00, 
+
+      "total_cost": 42000.00, 
+
+      "order_date": "2026-03-25", 
+
+      "expected_delivery": "2026-04-12", 
+
+      "actual_delivery": null, 
+
+      "status": "Confirmed", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-25", 
+
+      "notes": "Confirmed. Stock is near reorder point (88 units) but should last until delivery." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-048", 
+
+      "sku_id": "SKU-014", 
+
+      "sku_name": "Bubble Wrap Roll 100m", 
+
+      "supplier_id": "SUP-004", 
+
+      "supplier_name": "PackRight Solutions", 
+
+      "quantity": 100, 
+
+      "unit_cost": 450.00, 
+
+      "total_cost": 45000.00, 
+
+      "order_date": "2026-03-28", 
+
+      "expected_delivery": "2026-04-01", 
+
+      "actual_delivery": "2026-03-31", 
+
+      "status": "Delivered", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-28", 
+
+      "notes": "Early delivery as usual from PackRight." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-049", 
+
+      "sku_id": "SKU-036", 
+
+      "sku_name": "Temperature Sensor DS18B20", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 300, 
+
+      "unit_cost": 75.00, 
+
+      "total_cost": 22500.00, 
+
+      "order_date": "2026-03-28", 
+
+      "expected_delivery": "2026-04-11", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-03-28", 
+
+      "notes": "Shipped April 2. Tracking shows in Guangzhou port." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-050", 
+
+      "sku_id": "SKU-022", 
+
+      "sku_name": "OLED Display 1.3-inch", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 200, 
+
+      "unit_cost": 185.00, 
+
+      "total_cost": 37000.00, 
+
+      "order_date": "2026-04-01", 
+
+      "expected_delivery": "2026-04-18", 
+
+      "actual_delivery": null, 
+
+      "status": "Sent", 
+
+      "urgency": "Low", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-04-01", 
+
+      "notes": "Low urgency — stock is healthy at 520 units. Sent but not yet confirmed by supplier." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-051", 
+
+      "sku_id": "SKU-031", 
+
+      "sku_name": "PCB Blank FR4 Double-Sided 10x15cm", 
+
+      "supplier_id": "SUP-003", 
+
+      "supplier_name": "Bharat ElectroMaterials Ltd", 
+
+      "quantity": 500, 
+
+      "unit_cost": 28.00, 
+
+      "total_cost": 14000.00, 
+
+      "order_date": "2026-04-02", 
+
+      "expected_delivery": "2026-04-09", 
+
+      "actual_delivery": null, 
+
+      "status": "In Transit", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-04-02", 
+
+      "notes": "Should arrive today or tomorrow." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-052", 
+
+      "sku_id": "SKU-007", 
+
+      "sku_name": "Aluminum Heatsink 50x50mm", 
+
+      "supplier_id": "SUP-006", 
+
+      "supplier_name": "Precision Components Pvt Ltd", 
+
+      "quantity": 300, 
+
+      "unit_cost": 65.00, 
+
+      "total_cost": 19500.00, 
+
+      "order_date": "2026-04-03", 
+
+      "expected_delivery": "2026-04-13", 
+
+      "actual_delivery": null, 
+
+      "status": "Sent", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-04-03", 
+
+      "notes": "WARNING — ordering from SUP-006 despite their issues because no other supplier qualified for this SKU at this volume. Monitor closely." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-053", 
+
+      "sku_id": "SKU-020", 
+
+      "sku_name": "Smart Sensor Hub v2", 
+
+      "supplier_id": "SUP-001", 
+
+      "supplier_name": "TechAssembly India Pvt Ltd", 
+
+      "quantity": 40, 
+
+      "unit_cost": 6200.00, 
+
+      "total_cost": 248000.00, 
+
+      "order_date": "2026-04-05", 
+
+      "expected_delivery": "2026-04-25", 
+
+      "actual_delivery": null, 
+
+      "status": "Confirmed", 
+
+      "urgency": "Normal", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-04-05", 
+
+      "notes": "Confirmed. Stock at 62 units should last ~6-7 weeks at current demand." 
+
+    }, 
+
+    { 
+
+      "po_id": "PO-2026-054", 
+
+      "sku_id": "SKU-044", 
+
+      "sku_name": "Ethernet Module W5500", 
+
+      "supplier_id": "SUP-002", 
+
+      "supplier_name": "Shenzhen DisplayTech Co Ltd", 
+
+      "quantity": 200, 
+
+      "unit_cost": 245.00, 
+
+      "total_cost": 49000.00, 
+
+      "order_date": "2026-04-06", 
+
+      "expected_delivery": "2026-04-20", 
+
+      "actual_delivery": null, 
+
+      "status": "Sent", 
+
+      "urgency": "Critical", 
+
+      "approved_by": "Priya Menon", 
+
+      "approval_date": "2026-04-06", 
+
+      "notes": "CRITICAL — SKU-044 is at ZERO stock. Emergency order to SUP-002 (only supplier). Not yet confirmed. Follow up immediately." 
+
+    } 
+
+  ], 
+
+  "summary": { 
+
+    "by_status": { 
+
+      "Delivered": 8, 
+
+      "In Transit": 6, 
+
+      "Confirmed": 3, 
+
+      "Sent": 3, 
+
+      "Overdue": 4, 
+
+      "Draft": 0, 
+
+      "Cancelled": 0 
+
+    }, 
+
+    "overdue_pos": ["PO-2026-035", "PO-2026-036", "PO-2026-038", "PO-2026-040"], 
+
+    "overdue_total_value": 448000.00, 
+
+    "open_po_total_value": 1592000.00, 
+
+    "supplier_with_most_overdue": "SUP-006", 
+
+    "critical_urgency_open": ["PO-2026-035", "PO-2026-036", "PO-2026-038", "PO-2026-040", "PO-2026-042", "PO-2026-054"] 
+
+  } 
+
+} 
