@@ -1,0 +1,301 @@
+{ 
+
+  "metadata": { 
+
+    "file": "sales_history.json", 
+
+    "description": "Weekly aggregated sales data for demand forecasting — last 12 weeks", 
+
+    "period": "2026-01-12 to 2026-04-05", 
+
+    "granularity": "weekly", 
+
+    "currency": "INR", 
+
+    "channels": ["Online", "Wholesale", "Direct"], 
+
+    "total_weeks": 12 
+
+  }, 
+
+  "sales": [ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 110, "revenue": 231000, "channel": "Wholesale"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 98, "revenue": 205800, "channel": "Wholesale"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 120, "revenue": 252000, "channel": "Wholesale"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 105, "revenue": 220500, "channel": "Wholesale"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 115, "revenue": 241500, "channel": "Wholesale"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 130, "revenue": 273000, "channel": "Wholesale"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 122, "revenue": 256200, "channel": "Wholesale"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 140, "revenue": 294000, "channel": "Wholesale"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 135, "revenue": 283500, "channel": "Wholesale"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 148, "revenue": 310800, "channel": "Wholesale"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 155, "revenue": 325500, "channel": "Wholesale"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-001", "warehouse": "WH-NORTH", "quantity_sold": 160, "revenue": 336000, "channel": "Wholesale"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 32, "revenue": 176000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 28, "revenue": 154000, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 35, "revenue": 192500, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 30, "revenue": 165000, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 33, "revenue": 181500, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 29, "revenue": 159500, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 34, "revenue": 187000, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 31, "revenue": 170500, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 36, "revenue": 198000, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 30, "revenue": 165000, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 33, "revenue": 181500, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-002", "warehouse": "WH-NORTH", "quantity_sold": 32, "revenue": 176000, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 18, "revenue": 12240, "channel": "Online"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 22, "revenue": 14960, "channel": "Online"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 20, "revenue": 13600, "channel": "Online"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 24, "revenue": 16320, "channel": "Online"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 19, "revenue": 12920, "channel": "Online"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 25, "revenue": 17000, "channel": "Online"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 21, "revenue": 14280, "channel": "Online"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 28, "revenue": 19040, "channel": "Online"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 30, "revenue": 20400, "channel": "Online"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 35, "revenue": 23800, "channel": "Online"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 38, "revenue": 25840, "channel": "Online"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-005", "warehouse": "WH-NORTH", "quantity_sold": 42, "revenue": 28560, "channel": "Online"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 8, "revenue": 68000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 10, "revenue": 85000, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 9, "revenue": 76500, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 11, "revenue": 93500, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 10, "revenue": 85000, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 12, "revenue": 102000, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 11, "revenue": 93500, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 10, "revenue": 85000, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 12, "revenue": 102000, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 11, "revenue": 93500, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 13, "revenue": 110500, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-008", "warehouse": "WH-NORTH", "quantity_sold": 12, "revenue": 102000, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 22, "revenue": 10560, "channel": "Online"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 25, "revenue": 12000, "channel": "Online"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 28, "revenue": 13440, "channel": "Online"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 30, "revenue": 14400, "channel": "Online"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 33, "revenue": 15840, "channel": "Online"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 35, "revenue": 16800, "channel": "Online"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 38, "revenue": 18240, "channel": "Online"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 42, "revenue": 20160, "channel": "Online"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 45, "revenue": 21600, "channel": "Online"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 50, "revenue": 24000, "channel": "Online"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 55, "revenue": 26400, "channel": "Online"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-012", "warehouse": "WH-SOUTH", "quantity_sold": 58, "revenue": 27840, "channel": "Online"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 15, "revenue": 21000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 18, "revenue": 25200, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 16, "revenue": 22400, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 20, "revenue": 28000, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 17, "revenue": 23800, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 22, "revenue": 30800, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 19, "revenue": 26600, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 24, "revenue": 33600, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 21, "revenue": 29400, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 25, "revenue": 35000, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 23, "revenue": 32200, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-015", "warehouse": "WH-SOUTH", "quantity_sold": 26, "revenue": 36400, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 4, "revenue": 44000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 5, "revenue": 55000, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 5, "revenue": 55000, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 6, "revenue": 66000, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 5, "revenue": 55000, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 7, "revenue": 77000, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 6, "revenue": 66000, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 8, "revenue": 88000, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 7, "revenue": 77000, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 9, "revenue": 99000, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 8, "revenue": 88000, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-020", "warehouse": "WH-SOUTH", "quantity_sold": 10, "revenue": 110000, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 2, "revenue": 44000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 66000, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 2, "revenue": 44000, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 66000, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 88000, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 66000, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 88000, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 5, "revenue": 110000, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 88000, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 5, "revenue": 110000, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 6, "revenue": 132000, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-030", "warehouse": "WH-WEST", "quantity_sold": 5, "revenue": 110000, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 2, "revenue": 30000, "channel": "Direct"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 45000, "channel": "Direct"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 2, "revenue": 30000, "channel": "Direct"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 45000, "channel": "Direct"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 60000, "channel": "Direct"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 3, "revenue": 45000, "channel": "Direct"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 60000, "channel": "Direct"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 5, "revenue": 75000, "channel": "Direct"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 4, "revenue": 60000, "channel": "Direct"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 5, "revenue": 75000, "channel": "Direct"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 6, "revenue": 90000, "channel": "Direct"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-049", "warehouse": "WH-WEST", "quantity_sold": 6, "revenue": 90000, "channel": "Direct"}, 
+
+ 
+
+    {"week": "2026-W03", "week_start": "2026-01-12", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 25, "revenue": 1875, "channel": "Wholesale"}, 
+
+    {"week": "2026-W04", "week_start": "2026-01-19", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 22, "revenue": 1650, "channel": "Wholesale"}, 
+
+    {"week": "2026-W05", "week_start": "2026-01-26", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 28, "revenue": 2100, "channel": "Wholesale"}, 
+
+    {"week": "2026-W06", "week_start": "2026-02-02", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 20, "revenue": 1500, "channel": "Wholesale"}, 
+
+    {"week": "2026-W07", "week_start": "2026-02-09", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 24, "revenue": 1800, "channel": "Wholesale"}, 
+
+    {"week": "2026-W08", "week_start": "2026-02-16", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 26, "revenue": 1950, "channel": "Wholesale"}, 
+
+    {"week": "2026-W09", "week_start": "2026-02-23", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 23, "revenue": 1725, "channel": "Wholesale"}, 
+
+    {"week": "2026-W10", "week_start": "2026-03-02", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 25, "revenue": 1875, "channel": "Wholesale"}, 
+
+    {"week": "2026-W11", "week_start": "2026-03-09", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 21, "revenue": 1575, "channel": "Wholesale"}, 
+
+    {"week": "2026-W12", "week_start": "2026-03-16", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 27, "revenue": 2025, "channel": "Wholesale"}, 
+
+    {"week": "2026-W13", "week_start": "2026-03-23", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 24, "revenue": 1800, "channel": "Wholesale"}, 
+
+    {"week": "2026-W14", "week_start": "2026-03-30", "sku_id": "SKU-006", "warehouse": "WH-NORTH", "quantity_sold": 25, "revenue": 1875, "channel": "Wholesale"} 
+
+  ], 
+
+  "demand_patterns": { 
+
+    "strong_upward_trend": ["SKU-001", "SKU-005", "SKU-012", "SKU-020", "SKU-030", "SKU-049"], 
+
+    "stable_demand": ["SKU-002", "SKU-008", "SKU-006"], 
+
+    "seasonal_spike_expected": ["SKU-001", "SKU-012"], 
+
+    "new_product_ramping": ["SKU-040", "SKU-049"], 
+
+    "declining_demand": [], 
+
+    "highly_variable": ["SKU-005", "SKU-015"] 
+
+  }, 
+
+  "notes": "Sales data covers 10 key SKUs with 12 weeks of weekly history. Remaining 40 SKUs follow similar patterns. SKU-001 and SKU-012 show strong upward trends. SKU-005 shows demand acceleration (potential viral/seasonal effect). SKU-006 is flat — large current stock is overstock. SKU-018, SKU-032, SKU-044 have zero current stock but active demand — stockout situations." 
+
+} 
