@@ -1,68 +1,129 @@
-# ============================================================================ 
-# AGENT WIRING MAP — CROSS-AGENT DEPENDENCY AUDIT 
-# ============================================================================ 
-# This document maps EVERY data handoff between agents: 
-#   - Source agent → output file → exact field path 
-#   - Destination agent → which step → which function → which variable 
-#   - What happens if the dependency is missing 
-# ============================================================================ 
- 
- 
-# ██████████████████████████████████████████████████████████████████████████████ 
-# EXECUTION ORDER (with dependencies enforced) 
-# ██████████████████████████████████████████████████████████████████████████████ 
-# 
-#  ┌──────────────────┐ 
-#  │  Agent 1: Demand  │──────────────────────────────────────────────┐ 
-#  │  (no upstream)    │                                              │ 
-#  └────────┬─────────┘                                              │ 
-#           │                                                         │ 
-#           │ output_demand_forecast.json                             │ 
-#           │                                                         │ 
-#           ▼                                                         │ 
-#  ┌──────────────────┐     ┌──────────────────┐                     │ 
-#  │ Agent 2: Inventory│◄────│ Agent 3: Supplier │                    │ 
-#  │ (needs Agent 1)   │     │ (no agent upstream│                    │ 
-#  └────────┬─────────┘     │  uses raw files)  │                    │ 
-#           │                └────────┬─────────┘                     │ 
-#           │                         │                               │ 
-#           │ output_inventory_       │ output_supplier_              │ 
-#           │ actions.json            │ scores.json                   │ 
-#           │                         │                               │ 
-#           │    ┌────────────────────┘                               │ 
-#           │    │                                                    │ 
-#           ▼    ▼                                                    │ 
-#  ┌──────────────────┐     ┌──────────────────┐                     │ 
-#  │ Agent 5: Risk     │     │ Agent 4: Logistics│◄────────────────────┘ 
-#  │ (needs Agent 3)   │     │ (needs Agent 1)   │ 
-#  └────────┬─────────┘     └────────┬─────────┘ 
-#           │                         │ 
-#           │ output_risk_            │ output_logistics_ 
-#           │ register.json           │ status.json 
-#           │                         │ 
-#           ▼                         │ 
-#  ┌──────────────────┐              │ 
-#  │ Agent 6: Procure  │◄─────────────┘ (indirect, via Orchestrator) 
-#  │ (needs 2, 3, 5)   │ 
-#  └────────┬─────────┘ 
-#           │ 
-#           │ output_procurement_actions.json 
-#           │ 
-#           ▼ 
-#  ┌──────────────────┐ 
-#  │ Agent 0: Orchestr │◄── reads ALL 6 agent outputs 
-#  │ (needs ALL)       │ 
-#  └──────────────────┘ 
-#           │ 
-#           ▼ 
-#  briefing_*.json, decision_log.json, alert_queue.json 
-# 
-# ██████████████████████████████████████████████████████████████████████████████ 
- 
- 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 1: Agent 1 (Demand) → Agent 2 (Inventory) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+# AGENT WIRING MAP — CROSS-AGENT DEPENDENCY AUDIT
+
+## Overview
+This document serves as the master technical reference for data handoffs within the agentic ecosystem. It maps every interaction between autonomous agents to ensure data integrity, execution sequencing, and error handling.
+
+**Each mapping includes:**
+* **Source Agent:** The origin of the data, the specific output file, and the exact field path.
+* **Destination Agent:** The specific step, function, and variable where the data is ingested.
+* **Failure Protocol:** Defined behavior and system state if a dependency is missing or corrupted.
+
+---
+
+## System Architecture & Execution Order
+The following diagram illustrates the enforced execution flow and data dependencies.
+
+```mermaid
+graph TD
+    A1[Agent 1: Demand] -->|output_demand_forecast.json| A2[Agent 2: Inventory]
+    A1 -->|output_demand_forecast.json| A4[Agent 4: Logistics]
+    A3[Agent 3: Supplier] --> A2
+    A3 -->|output_supplier_scores.json| A5[Agent 5: Risk]
+    A2 -->|output_inventory_actions.json| A6[Agent 6: Procure]
+    A3 --> A6
+    A5 -->|output_risk_register.json| A6
+    A4 -->|output_logistics_status.json| A0[Agent 0: Orchestrator]
+    A6 -->|output_procurement_actions.json| A0
+    
+    subgraph Final_Output
+    A0 --> B1[briefing_*.json]
+    A0 --> B2[decision_log.json]
+    A0 --> B3[alert_queue.json]
+    end
+
+    style A0 fill:#f96,stroke:#333,stroke-width:4px
+    style A1 fill:#bbf
+    style A3 fill:#bbf
+```
+
+### ASCII Flow Map (Original)
+```text
+ ┌──────────────────┐ 
+ │  Agent 1: Demand  │──────────────────────────────────────────────┐ 
+ │  (no upstream)    │                                              │ 
+ └────────┬─────────┘                                               │ 
+          │                                                         │ 
+          │ output_demand_forecast.json                             │ 
+          │                                                         │ 
+          ▼                                                         │ 
+ ┌──────────────────┐     ┌──────────────────┐                      │ 
+ │ Agent 2: Inventory│◄────│ Agent 3: Supplier │                      │ 
+ │ (needs Agent 1)   │     │ (no agent upstream│                      │ 
+ └────────┬─────────┘     │  uses raw files)  │                      │ 
+          │                └────────┬─────────┘                      │ 
+          │                         │                                │ 
+          │ output_inventory_       │ output_supplier_               │ 
+          │ actions.json            │ scores.json                    │ 
+          │                         │                                │ 
+          │    ┌────────────────────┘                                │ 
+          │    │                                                     │ 
+          ▼    ▼                                                     │ 
+ ┌──────────────────┐     ┌──────────────────┐                      │ 
+ │ Agent 5: Risk     │     │ Agent 4: Logistics│◄────────────────────┘ 
+ │ (needs Agent 3)   │     │ (needs Agent 1)   │ 
+ └────────┬─────────┘     └────────┬─────────┘ 
+          │                         │ 
+          │ output_risk_            │ output_logistics_ 
+          │ register.json           │ status.json 
+          │                         │ 
+          ▼                         │ 
+ ┌──────────────────┐               │ 
+ │ Agent 6: Procure  │◄─────────────┘ (indirect, via Orchestrator) 
+ │ (needs 2, 3, 5)   │ 
+ └────────┬─────────┘ 
+          │ 
+          │ output_procurement_actions.json 
+          │ 
+          ▼ 
+ ┌──────────────────┐ 
+ │ Agent 0: Orchestr │◄── reads ALL 6 agent outputs 
+ │ (needs ALL)       │ 
+ └──────────────────┘ 
+          │ 
+          ▼ 
+ briefing_*.json, decision_log.json, alert_queue.json 
+```
+
+---
+
+## Dependency Registry
+
+| Agent | Name | Upstream Dependencies | Primary Output File |
+| :--- | :--- | :--- | :--- |
+| **Agent 1** | Demand | None (Raw Data) | `output_demand_forecast.json` |
+| **Agent 2** | Inventory | Agent 1 | `output_inventory_actions.json` |
+| **Agent 3** | Supplier | None (Raw Data) | `output_supplier_scores.json` |
+| **Agent 4** | Logistics | Agent 1 | `output_logistics_status.json` |
+| **Agent 5** | Risk | Agent 3 | `output_risk_register.json` |
+| **Agent 6** | Procure | Agents 2, 3, 5 | `output_procurement_actions.json` |
+| **Agent 0** | Orchestrator | **ALL** (Agents 1-6) | `briefing_*.json`, `decision_log.json`, `alert_queue.json` |
+
+---
+
+## Detailed Data Handoffs (Wires)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### WIRE 1: Agent 1 (Demand) → Agent 2 (Inventory)
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+* **Source Agent:** Agent 1 (Demand)
+    * **Output File:** `output_demand_forecast.json`
+    * **Exact Field Path:** `$.forecast_results.sku_level_demand`
+* **Destination Agent:** Agent 2 (Inventory)
+    * **Execution Step:** Step 2: Safety Stock Calculation
+    * **Target Function:** `calculate_reorder_points()`
+    * **Input Variable:** `projected_demand_volume`
+* **Dependency Failure Protocol:**
+    * **Impact:** Critical. Agent 2 cannot determine stock-out risks.
+    * **Action:** Fallback to historical 30-day average demand; flag "High Uncertainty" in `alert_queue.json`.
+
+---
+
+## Final Output Artifacts
+The Orchestrator (Agent 0) synthesizes all upstream data into the following:
+1.  **`briefing_*.json`**: Executive summary of system state.
+2.  **`decision_log.json`**: Audit trail of every automated action taken by the agents.
+3.  **`alert_queue.json`**: Priority-ranked list of issues requiring human intervention.
  
 ## What is passed: 
 - **File:** `output_demand_forecast.json` 
