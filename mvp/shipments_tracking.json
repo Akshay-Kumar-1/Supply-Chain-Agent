@@ -1,0 +1,1003 @@
+{ 
+
+  "metadata": { 
+
+    "file": "shipments_tracking.json", 
+
+    "description": "Shipment tracking for all in-transit and recently delivered orders", 
+
+    "last_updated": "2026-04-07T08:00:00+05:30", 
+
+    "version": "1.0", 
+
+    "carriers": ["BlueDart", "Delhivery", "DTDC", "DHL Express", "Maersk Shipping", "IndiaPost"], 
+
+    "total_shipments": 18 
+
+  }, 
+
+  "shipments": [ 
+
+    { 
+
+      "shipment_id": "SHP-0880", 
+
+      "po_id": "PO-2026-035", 
+
+      "sku_id": "SKU-015", 
+
+      "sku_name": "Microcontroller STM32F4", 
+
+      "supplier_id": "SUP-005", 
+
+      "carrier": "DHL Express", 
+
+      "carrier_tracking_number": "DHL-TW-2026-887654", 
+
+      "origin": "Taipei, Taiwan", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-03-20", 
+
+      "expected_arrival": "2026-03-31", 
+
+      "revised_eta": "2026-04-12", 
+
+      "actual_arrival": null, 
+
+      "current_status": "Delayed — Customs Hold", 
+
+      "last_status_update": "2026-04-05T14:30:00+05:30", 
+
+      "last_known_location": "Chennai Customs Warehouse", 
+
+      "delay_flag": true, 
+
+      "delay_days": 7, 
+
+      "delay_reason": "Customs documentation issue — additional duty assessment required", 
+
+      "quantity_shipped": 300, 
+
+      "weight_kg": 45.0, 
+
+      "freight_cost_inr": 32000.00, 
+
+      "insurance_value_inr": 267000.00, 
+
+      "notes": "CRITICAL — held at customs for 5 days. Customs agent working on clearance. SKU-015 at 28 units only." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0881", 
+
+      "po_id": "PO-2026-036", 
+
+      "sku_id": "SKU-018", 
+
+      "sku_name": "Relay Module 5V 4-Channel", 
+
+      "supplier_id": "SUP-006", 
+
+      "carrier": "Delhivery", 
+
+      "carrier_tracking_number": null, 
+
+      "origin": "Bangalore, India", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": null, 
+
+      "expected_arrival": "2026-03-10", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "NOT SHIPPED — Supplier Production Delay", 
+
+      "last_status_update": "2026-04-01T10:00:00+05:30", 
+
+      "last_known_location": "Supplier Facility, Bangalore", 
+
+      "delay_flag": true, 
+
+      "delay_days": 28, 
+
+      "delay_reason": "Supplier production line down — parts shortage at their end", 
+
+      "quantity_shipped": 0, 
+
+      "weight_kg": null, 
+
+      "freight_cost_inr": null, 
+
+      "insurance_value_inr": null, 
+
+      "notes": "CRITICAL — never shipped. SUP-006 keeps pushing dates. No confirmed ship date. SKU-018 at ZERO stock. Consider cancelling and sourcing from SUP-003." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0882", 
+
+      "po_id": "PO-2026-038", 
+
+      "sku_id": "SKU-005", 
+
+      "sku_name": "Lithium Battery Pack 3.7V 5000mAh", 
+
+      "supplier_id": "SUP-005", 
+
+      "carrier": "DHL Express", 
+
+      "carrier_tracking_number": "DHL-TW-2026-891023", 
+
+      "origin": "Taipei, Taiwan", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-03-25", 
+
+      "expected_arrival": "2026-04-05", 
+
+      "revised_eta": "2026-04-10", 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — Delayed", 
+
+      "last_status_update": "2026-04-06T09:15:00+05:30", 
+
+      "last_known_location": "Delhi Airport Cargo Terminal", 
+
+      "delay_flag": true, 
+
+      "delay_days": 2, 
+
+      "delay_reason": "Delayed clearance at Delhi airport — documentation backlog", 
+
+      "quantity_shipped": 200, 
+
+      "weight_kg": 120.0, 
+
+      "freight_cost_inr": 28500.00, 
+
+      "insurance_value_inr": 84000.00, 
+
+      "notes": "At Delhi airport cargo — should clear in 2-3 days. SKU-005 at 12 units — CRITICAL." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0883", 
+
+      "po_id": "PO-2026-040", 
+
+      "sku_id": "SKU-032", 
+
+      "sku_name": "Transformer 220V to 12V 10A", 
+
+      "supplier_id": "SUP-006", 
+
+      "carrier": "DTDC", 
+
+      "carrier_tracking_number": "DTDC-BLR-20260401-4521", 
+
+      "origin": "Bangalore, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-04-01", 
+
+      "expected_arrival": "2026-04-06", 
+
+      "revised_eta": "2026-04-09", 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — Delayed", 
+
+      "last_status_update": "2026-04-06T16:45:00+05:30", 
+
+      "last_known_location": "DTDC Hub, Nagpur", 
+
+      "delay_flag": true, 
+
+      "delay_days": 1, 
+
+      "delay_reason": "Route delay — consignment stuck at Nagpur hub due to backlog", 
+
+      "quantity_shipped": 100, 
+
+      "weight_kg": 85.0, 
+
+      "freight_cost_inr": 4200.00, 
+
+      "insurance_value_inr": 68000.00, 
+
+      "notes": "Finally shipped after 10 days delay at supplier. Now delayed in transit. SKU-032 at ZERO — assembly line 3 blocked." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0884", 
+
+      "po_id": "PO-2026-042", 
+
+      "sku_id": "SKU-001", 
+
+      "sku_name": "Circuit Board Assembly A1", 
+
+      "supplier_id": "SUP-001", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-PUN-20260328-7890", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-03-28", 
+
+      "expected_arrival": "2026-04-02", 
+
+      "revised_eta": "2026-04-10", 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — Delayed", 
+
+      "last_status_update": "2026-04-06T11:20:00+05:30", 
+
+      "last_known_location": "BlueDart Sorting Center, Jaipur", 
+
+      "delay_flag": true, 
+
+      "delay_days": 5, 
+
+      "delay_reason": "Vehicle breakdown en route — rerouted via Jaipur hub", 
+
+      "quantity_shipped": 500, 
+
+      "weight_kg": 250.0, 
+
+      "freight_cost_inr": 8500.00, 
+
+      "insurance_value_inr": 625000.00, 
+
+      "notes": "HIGH VALUE shipment delayed. Currently in Jaipur — should reach Delhi in 3-4 days. SKU-001 at 45 units with demand 150+/week. Will stockout before arrival." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0885", 
+
+      "po_id": "PO-2026-044", 
+
+      "sku_id": "SKU-030", 
+
+      "sku_name": "Industrial IoT Gateway v1", 
+
+      "supplier_id": "SUP-007", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-AMD-20260402-1234", 
+
+      "origin": "Ahmedabad, India", 
+
+      "destination": "WH-WEST, Mumbai", 
+
+      "ship_date": "2026-04-02", 
+
+      "expected_arrival": "2026-04-10", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — On Track", 
+
+      "last_status_update": "2026-04-07T06:30:00+05:30", 
+
+      "last_known_location": "BlueDart Hub, Surat", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 20, 
+
+      "weight_kg": 40.0, 
+
+      "freight_cost_inr": 3200.00, 
+
+      "insurance_value_inr": 250000.00, 
+
+      "notes": "On track. High-value shipment. Stock at 18 units — should last until arrival." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0886", 
+
+      "po_id": "PO-2026-045", 
+
+      "sku_id": "SKU-008", 
+
+      "sku_name": "Smart Controller Unit v3", 
+
+      "supplier_id": "SUP-001", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-PUN-20260401-5678", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-04-01", 
+
+      "expected_arrival": "2026-04-08", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — On Track", 
+
+      "last_status_update": "2026-04-07T07:00:00+05:30", 
+
+      "last_known_location": "BlueDart Hub, Indore", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 100, 
+
+      "weight_kg": 65.0, 
+
+      "freight_cost_inr": 5800.00, 
+
+      "insurance_value_inr": 480000.00, 
+
+      "notes": "On schedule. Should arrive tomorrow." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0887", 
+
+      "po_id": "PO-2026-046", 
+
+      "sku_id": "SKU-040", 
+
+      "sku_name": "Smart Power Monitor v1", 
+
+      "supplier_id": "SUP-001", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-PUN-20260401-5679", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-04-01", 
+
+      "expected_arrival": "2026-04-08", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — On Track", 
+
+      "last_status_update": "2026-04-07T07:00:00+05:30", 
+
+      "last_known_location": "BlueDart Hub, Indore", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 50, 
+
+      "weight_kg": 35.0, 
+
+      "freight_cost_inr": 3400.00, 
+
+      "insurance_value_inr": 190000.00, 
+
+      "notes": "Shipped with SHP-0886. On schedule." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0888", 
+
+      "po_id": "PO-2026-049", 
+
+      "sku_id": "SKU-036", 
+
+      "sku_name": "Temperature Sensor DS18B20", 
+
+      "supplier_id": "SUP-002", 
+
+      "carrier": "Maersk Shipping", 
+
+      "carrier_tracking_number": "MAEU-SZ-2026-445566", 
+
+      "origin": "Shenzhen, China", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-04-02", 
+
+      "expected_arrival": "2026-04-18", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — On Track (Sea Freight)", 
+
+      "last_status_update": "2026-04-06T22:00:00+05:30", 
+
+      "last_known_location": "Port of Hong Kong — Vessel Departed", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 300, 
+
+      "weight_kg": 15.0, 
+
+      "freight_cost_inr": 12000.00, 
+
+      "insurance_value_inr": 22500.00, 
+
+      "notes": "Sea freight — longer transit but cheaper. Stock is healthy (280 units)." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0889", 
+
+      "po_id": "PO-2026-051", 
+
+      "sku_id": "SKU-031", 
+
+      "sku_name": "PCB Blank FR4 Double-Sided 10x15cm", 
+
+      "supplier_id": "SUP-003", 
+
+      "carrier": "Delhivery", 
+
+      "carrier_tracking_number": "DEL-CHN-20260405-8901", 
+
+      "origin": "Chennai, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-04-05", 
+
+      "expected_arrival": "2026-04-09", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": null, 
+
+      "current_status": "In Transit — On Track", 
+
+      "last_status_update": "2026-04-07T05:45:00+05:30", 
+
+      "last_known_location": "Delhivery Hub, Hyderabad", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 500, 
+
+      "weight_kg": 22.0, 
+
+      "freight_cost_inr": 1800.00, 
+
+      "insurance_value_inr": 14000.00, 
+
+      "notes": "Arriving today/tomorrow. Standard delivery from SUP-003." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0890", 
+
+      "po_id": "PO-2026-030", 
+
+      "sku_id": "SKU-008", 
+
+      "sku_name": "Smart Controller Unit v3", 
+
+      "supplier_id": "SUP-001", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-PUN-20260228-3456", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-02-28", 
+
+      "expected_arrival": "2026-03-05", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-04", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-04T14:30:00+05:30", 
+
+      "last_known_location": "WH-NORTH, Delhi", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 80, 
+
+      "weight_kg": 52.0, 
+
+      "freight_cost_inr": 4500.00, 
+
+      "insurance_value_inr": 384000.00, 
+
+      "notes": "Delivered early. Good." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0891", 
+
+      "po_id": "PO-2026-031", 
+
+      "sku_id": "SKU-012", 
+
+      "sku_name": "Sensor Module IR Proximity", 
+
+      "supplier_id": "SUP-002", 
+
+      "carrier": "DHL Express", 
+
+      "carrier_tracking_number": "DHL-SZ-2026-776655", 
+
+      "origin": "Shenzhen, China", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-02-25", 
+
+      "expected_arrival": "2026-03-10", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-18", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-18T11:00:00+05:30", 
+
+      "last_known_location": "WH-SOUTH, Chennai", 
+
+      "delay_flag": true, 
+
+      "delay_days": 8, 
+
+      "delay_reason": "Delayed at Shenzhen port — vessel rescheduling", 
+
+      "quantity_shipped": 200, 
+
+      "weight_kg": 18.0, 
+
+      "freight_cost_inr": 15000.00, 
+
+      "insurance_value_inr": 56000.00, 
+
+      "notes": "8 days late. 5 units defective on inspection." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0892", 
+
+      "po_id": "PO-2026-034", 
+
+      "sku_id": "SKU-017", 
+
+      "sku_name": "WiFi Module ESP32", 
+
+      "supplier_id": "SUP-002", 
+
+      "carrier": "DHL Express", 
+
+      "carrier_tracking_number": "DHL-SZ-2026-889900", 
+
+      "origin": "Shenzhen, China", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-03-05", 
+
+      "expected_arrival": "2026-03-15", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-22", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-22T10:30:00+05:30", 
+
+      "last_known_location": "WH-SOUTH, Chennai", 
+
+      "delay_flag": true, 
+
+      "delay_days": 7, 
+
+      "delay_reason": "Port congestion at Chennai", 
+
+      "quantity_shipped": 300, 
+
+      "weight_kg": 12.0, 
+
+      "freight_cost_inr": 14200.00, 
+
+      "insurance_value_inr": 58500.00, 
+
+      "notes": "7 days late. 12 defective units (4%). Pattern with SUP-002." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0893", 
+
+      "po_id": "PO-2026-037", 
+
+      "sku_id": "SKU-021", 
+
+      "sku_name": "Circuit Board Assembly B2", 
+
+      "supplier_id": "SUP-001", 
+
+      "carrier": "BlueDart", 
+
+      "carrier_tracking_number": "BD-PUN-20260312-9012", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-WEST, Mumbai", 
+
+      "ship_date": "2026-03-12", 
+
+      "expected_arrival": "2026-03-18", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-23", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-23T09:15:00+05:30", 
+
+      "last_known_location": "WH-WEST, Mumbai", 
+
+      "delay_flag": true, 
+
+      "delay_days": 5, 
+
+      "delay_reason": "BlueDart logistics issue — rerouted via alternate hub", 
+
+      "quantity_shipped": 150, 
+
+      "weight_kg": 95.0, 
+
+      "freight_cost_inr": 3800.00, 
+
+      "insurance_value_inr": 147000.00, 
+
+      "notes": "5 days late — BlueDart issue, not supplier. Quality was fine." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0894", 
+
+      "po_id": "PO-2026-032", 
+
+      "sku_id": "SKU-003", 
+
+      "sku_name": "Copper Wire Spool 1.5mm", 
+
+      "supplier_id": "SUP-003", 
+
+      "carrier": "Delhivery", 
+
+      "carrier_tracking_number": "DEL-CHN-20260222-5678", 
+
+      "origin": "Chennai, India", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-02-22", 
+
+      "expected_arrival": "2026-02-27", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-02-26", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-02-26T13:00:00+05:30", 
+
+      "last_known_location": "WH-NORTH, Delhi", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 1000, 
+
+      "weight_kg": 45.0, 
+
+      "freight_cost_inr": 2200.00, 
+
+      "insurance_value_inr": 85000.00, 
+
+      "notes": "Early delivery. Perfect." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0895", 
+
+      "po_id": "PO-2026-041", 
+
+      "sku_id": "SKU-009", 
+
+      "sku_name": "USB-C Connector Module", 
+
+      "supplier_id": "SUP-002", 
+
+      "carrier": "DHL Express", 
+
+      "carrier_tracking_number": "DHL-SZ-2026-112233", 
+
+      "origin": "Shenzhen, China", 
+
+      "destination": "WH-NORTH, Delhi", 
+
+      "ship_date": "2026-03-18", 
+
+      "expected_arrival": "2026-03-28", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-04-02", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-04-02T10:45:00+05:30", 
+
+      "last_known_location": "WH-NORTH, Delhi", 
+
+      "delay_flag": true, 
+
+      "delay_days": 5, 
+
+      "delay_reason": "Customs processing delay at Delhi", 
+
+      "quantity_shipped": 500, 
+
+      "weight_kg": 8.0, 
+
+      "freight_cost_inr": 9800.00, 
+
+      "insurance_value_inr": 16000.00, 
+
+      "notes": "5 days late. Yet another delay from SUP-002 shipments." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0896", 
+
+      "po_id": "PO-2026-039", 
+
+      "sku_id": "SKU-013", 
+
+      "sku_name": "Solder Wire 60/40 500g", 
+
+      "supplier_id": "SUP-003", 
+
+      "carrier": "Delhivery", 
+
+      "carrier_tracking_number": "DEL-CHN-20260312-3456", 
+
+      "origin": "Chennai, India", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-03-12", 
+
+      "expected_arrival": "2026-03-17", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-16", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-16T15:30:00+05:30", 
+
+      "last_known_location": "WH-SOUTH, Chennai", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 100, 
+
+      "weight_kg": 50.0, 
+
+      "freight_cost_inr": 1200.00, 
+
+      "insurance_value_inr": 32000.00, 
+
+      "notes": "Early delivery from SUP-003. Always reliable." 
+
+    }, 
+
+    { 
+
+      "shipment_id": "SHP-0897", 
+
+      "po_id": "PO-2026-048", 
+
+      "sku_id": "SKU-014", 
+
+      "sku_name": "Bubble Wrap Roll 100m", 
+
+      "supplier_id": "SUP-004", 
+
+      "carrier": "DTDC", 
+
+      "carrier_tracking_number": "DTDC-PUN-20260329-7890", 
+
+      "origin": "Pune, India", 
+
+      "destination": "WH-SOUTH, Chennai", 
+
+      "ship_date": "2026-03-29", 
+
+      "expected_arrival": "2026-04-01", 
+
+      "revised_eta": null, 
+
+      "actual_arrival": "2026-03-31", 
+
+      "current_status": "Delivered", 
+
+      "last_status_update": "2026-03-31T16:00:00+05:30", 
+
+      "last_known_location": "WH-SOUTH, Chennai", 
+
+      "delay_flag": false, 
+
+      "delay_days": 0, 
+
+      "delay_reason": null, 
+
+      "quantity_shipped": 100, 
+
+      "weight_kg": 120.0, 
+
+      "freight_cost_inr": 2800.00, 
+
+      "insurance_value_inr": 45000.00, 
+
+      "notes": "Early delivery from PackRight. Excellent." 
+
+    } 
+
+  ], 
+
+  "summary": { 
+
+    "total_active_shipments": 9, 
+
+    "in_transit_on_track": ["SHP-0885", "SHP-0886", "SHP-0887", "SHP-0888", "SHP-0889"], 
+
+    "in_transit_delayed": ["SHP-0880", "SHP-0882", "SHP-0883", "SHP-0884"], 
+
+    "not_shipped": ["SHP-0881"], 
+
+    "recently_delivered": ["SHP-0890", "SHP-0891", "SHP-0892", "SHP-0893", "SHP-0894", "SHP-0895", "SHP-0896", "SHP-0897"], 
+
+    "total_freight_cost_active": 113400.00, 
+
+    "carrier_performance": { 
+
+      "BlueDart": {"total": 6, "on_time": 3, "delayed": 3, "on_time_rate": 0.50}, 
+
+      "DHL Express": {"total": 5, "on_time": 0, "delayed": 5, "on_time_rate": 0.00}, 
+
+      "Delhivery": {"total": 4, "on_time": 3, "delayed": 1, "on_time_rate": 0.75}, 
+
+      "DTDC": {"total": 2, "on_time": 1, "delayed": 1, "on_time_rate": 0.50}, 
+
+      "Maersk Shipping": {"total": 1, "on_time": 1, "delayed": 0, "on_time_rate": 1.00} 
+
+    }, 
+
+    "critical_shipments_impacting_stockout": [ 
+
+      {"shipment": "SHP-0880", "sku": "SKU-015", "current_stock": 28, "weekly_demand": 22}, 
+
+      {"shipment": "SHP-0881", "sku": "SKU-018", "current_stock": 0, "weekly_demand": 15}, 
+
+      {"shipment": "SHP-0882", "sku": "SKU-005", "current_stock": 12, "weekly_demand": 38}, 
+
+      {"shipment": "SHP-0883", "sku": "SKU-032", "current_stock": 0, "weekly_demand": 12}, 
+
+      {"shipment": "SHP-0884", "sku": "SKU-001", "current_stock": 45, "weekly_demand": 155} 
+
+    ] 
+
+  } 
+
+} 
