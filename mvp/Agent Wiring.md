@@ -172,9 +172,9 @@ else:
 - **Flag in output:** `"forecast_source": "Fallback — Agent 1 output unavailable"` 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 2: Agent 1 (Demand) → Agent 4 (Logistics) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 2: Agent 1 (Demand) → Agent 4 (Logistics) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## What is passed: 
 - **File:** `output_demand_forecast.json` 
@@ -228,9 +228,9 @@ for shipment in delayed_shipments:
 - **Flag:** `"forecast_source": "Fallback — demand data unavailable, impact may be underestimated"` 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 3: Agent 3 (Supplier) → Agent 5 (Risk) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 3: Agent 3 (Supplier) → Agent 5 (Risk) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## What is passed: 
 - **File:** `output_supplier_scores.json` 
@@ -277,9 +277,9 @@ def scan_internal_risks(supplier_scores, inventory, shipments):
 - **Impact:** Misses supplier performance degradation risks. External risks still work. 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 4: Agent 2 (Inventory) → Agent 6 (Procurement) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 4: Agent 2 (Inventory) → Agent 6 (Procurement) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## What is passed: 
 - **File:** `output_inventory_actions.json` 
@@ -329,9 +329,9 @@ def get_reorder_needs(inventory_output, existing_pos):
 - **This is a HARD dependency.** Agent 6 cannot function without Agent 2. 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 5: Agent 3 (Supplier) → Agent 6 (Procurement) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 5: Agent 3 (Supplier) → Agent 6 (Procurement) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## What is passed: 
 - **File:** `output_supplier_scores.json` 
@@ -372,9 +372,9 @@ def select_supplier(need, supplier_scores, risk_register, supplier_master):
 - **Flag:** `"supplier_selection_basis": "Default — Agent 3 scores unavailable, using primary supplier from inventory"` 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 6: Agent 5 (Risk) → Agent 6 (Procurement) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 6: Agent 5 (Risk) → Agent 6 (Procurement) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## What is passed: 
 - **File:** `output_risk_register.json` 
@@ -407,9 +407,9 @@ def select_supplier(need, supplier_scores, risk_register, supplier_master):
 - **Flag:** `"risk_check": "Skipped — Agent 5 output unavailable"` 
  
  
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-# WIRE 7: ALL Agents → Agent 0 (Orchestrator) 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+### WIRE 7: ALL Agents → Agent 0 (Orchestrator) 
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
  
 ## Agent 0 reads all 6 output files. Here's exactly what it uses from each: 
  
