@@ -1,0 +1,2577 @@
+{ 
+
+ 
+
+  "metadata": { 
+
+    "file": "inventory_master.json", 
+
+    "description": "Current inventory levels across all SKUs and warehouse locations", 
+
+    "last_updated": "2026-04-07T06:00:00+05:30", 
+
+    "version": "1.0", 
+
+    "currency": "INR", 
+
+    "total_skus": 50, 
+
+    "warehouses": ["WH-NORTH", "WH-SOUTH", "WH-WEST"], 
+
+    "categories": ["Electronics", "Packaging", "Raw Materials", "Components", "Finished Goods"] 
+
+  }, 
+
+  "inventory": [ 
+
+    { 
+
+      "sku_id": "SKU-001", 
+
+      "product_name": "Circuit Board Assembly A1", 
+
+      "category": "Electronics", 
+
+      "sub_category": "PCB Assemblies", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 45, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 1000, 
+
+      "unit_cost": 1250.00, 
+
+      "selling_price": 2100.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-001", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-15", 
+
+      "pending_inbound_qty": 500, 
+
+      "pending_inbound_po": "PO-2026-042", 
+
+      "notes": "Critical component — high demand from production line 1" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-002", 
+
+      "product_name": "LED Display Module 7-inch", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Display Units", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 320, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 800, 
+
+      "unit_cost": 3400.00, 
+
+      "selling_price": 5500.00, 
+
+      "lead_time_days": 21, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Single source — no backup supplier qualified" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-003", 
+
+      "product_name": "Copper Wire Spool 1.5mm", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Wiring", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 890, 
+
+      "unit_of_measure": "meters", 
+
+      "reorder_point": 500, 
+
+      "safety_stock": 250, 
+
+      "max_stock_level": 3000, 
+
+      "unit_cost": 85.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-20", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-004", 
+
+      "product_name": "Corrugated Box 30x20x15cm", 
+
+      "category": "Packaging", 
+
+      "sub_category": "Shipping Boxes", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 4500, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 2000, 
+
+      "safety_stock": 1000, 
+
+      "max_stock_level": 10000, 
+
+      "unit_cost": 18.50, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-004", 
+
+      "secondary_supplier": "SUP-010", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-25", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "High volume, low value — order in bulk" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-005", 
+
+      "product_name": "Lithium Battery Pack 3.7V 5000mAh", 
+
+      "category": "Components", 
+
+      "sub_category": "Power Components", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 12, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 100, 
+
+      "safety_stock": 50, 
+
+      "max_stock_level": 500, 
+
+      "unit_cost": 420.00, 
+
+      "selling_price": 680.00, 
+
+      "lead_time_days": 28, 
+
+      "primary_supplier": "SUP-005", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": 730, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-10", 
+
+      "pending_inbound_qty": 200, 
+
+      "pending_inbound_po": "PO-2026-038", 
+
+      "notes": "CRITICAL — below safety stock. Pending PO delayed. Import item — 28 day lead time." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-006", 
+
+      "product_name": "Resistor Kit 1K Ohm (pack of 100)", 
+
+      "category": "Components", 
+
+      "sub_category": "Passive Components", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 2400, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 300, 
+
+      "safety_stock": 150, 
+
+      "max_stock_level": 3000, 
+
+      "unit_cost": 45.00, 
+
+      "selling_price": 75.00, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-04", 
+
+      "last_reorder_date": "2026-01-15", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Overstocked — 8× monthly demand sitting in warehouse" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-007", 
+
+      "product_name": "Aluminum Heatsink 50x50mm", 
+
+      "category": "Components", 
+
+      "sub_category": "Thermal Management", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 178, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 800, 
+
+      "unit_cost": 65.00, 
+
+      "selling_price": 110.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Below reorder point — needs attention" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-008", 
+
+      "product_name": "Smart Controller Unit v3", 
+
+      "category": "Finished Goods", 
+
+      "sub_category": "Controllers", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 85, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 50, 
+
+      "safety_stock": 25, 
+
+      "max_stock_level": 300, 
+
+      "unit_cost": 4800.00, 
+
+      "selling_price": 8500.00, 
+
+      "lead_time_days": 18, 
+
+      "primary_supplier": "SUP-001", 
+
+      "secondary_supplier": "SUP-007", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-22", 
+
+      "pending_inbound_qty": 100, 
+
+      "pending_inbound_po": "PO-2026-045", 
+
+      "notes": "Flagship product — high margin, steady demand" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-009", 
+
+      "product_name": "USB-C Connector Module", 
+
+      "category": "Components", 
+
+      "sub_category": "Connectors", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 560, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 400, 
+
+      "safety_stock": 200, 
+
+      "max_stock_level": 2000, 
+
+      "unit_cost": 32.00, 
+
+      "selling_price": 55.00, 
+
+      "lead_time_days": 12, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-05", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-010", 
+
+      "product_name": "Thermal Paste Tube 30g", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Assembly Materials", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 95, 
+
+      "unit_of_measure": "tubes", 
+
+      "reorder_point": 100, 
+
+      "safety_stock": 50, 
+
+      "max_stock_level": 500, 
+
+      "unit_cost": 120.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": 365, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-18", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Below reorder point. Shelf life item — check expiry." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-011", 
+
+      "product_name": "Power Supply Unit 12V 5A", 
+
+      "category": "Components", 
+
+      "sub_category": "Power Components", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 210, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 120, 
+
+      "safety_stock": 60, 
+
+      "max_stock_level": 600, 
+
+      "unit_cost": 550.00, 
+
+      "selling_price": 950.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-005", 
+
+      "secondary_supplier": "SUP-001", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-12", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-012", 
+
+      "product_name": "Sensor Module IR Proximity", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Sensors", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 340, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 180, 
+
+      "safety_stock": 90, 
+
+      "max_stock_level": 800, 
+
+      "unit_cost": 280.00, 
+
+      "selling_price": 480.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-28", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Demand trending up 22% MoM — monitor closely" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-013", 
+
+      "product_name": "Solder Wire 60/40 500g", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Assembly Materials", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 150, 
+
+      "unit_of_measure": "spools", 
+
+      "reorder_point": 80, 
+
+      "safety_stock": 40, 
+
+      "max_stock_level": 400, 
+
+      "unit_cost": 320.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-15", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-014", 
+
+      "product_name": "Bubble Wrap Roll 100m", 
+
+      "category": "Packaging", 
+
+      "sub_category": "Protective Packaging", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 85, 
+
+      "unit_of_measure": "rolls", 
+
+      "reorder_point": 50, 
+
+      "safety_stock": 25, 
+
+      "max_stock_level": 200, 
+
+      "unit_cost": 450.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 3, 
+
+      "primary_supplier": "SUP-004", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-28", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-015", 
+
+      "product_name": "Microcontroller STM32F4", 
+
+      "category": "Electronics", 
+
+      "sub_category": "ICs", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 28, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 600, 
+
+      "unit_cost": 890.00, 
+
+      "selling_price": 1400.00, 
+
+      "lead_time_days": 30, 
+
+      "primary_supplier": "SUP-005", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 300, 
+
+      "pending_inbound_po": "PO-2026-035", 
+
+      "notes": "CRITICAL — well below safety stock. Import semiconductor — long lead time. Single source risk." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-016", 
+
+      "product_name": "Capacitor 100uF Electrolytic (pack of 50)", 
+
+      "category": "Components", 
+
+      "sub_category": "Passive Components", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 1800, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 2000, 
+
+      "unit_cost": 38.00, 
+
+      "selling_price": 62.00, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-04", 
+
+      "last_reorder_date": "2025-12-20", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Overstocked — 9× monthly demand. No order placed in 3+ months." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-017", 
+
+      "product_name": "WiFi Module ESP32", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Communication Modules", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 410, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 250, 
+
+      "safety_stock": 125, 
+
+      "max_stock_level": 1000, 
+
+      "unit_cost": 195.00, 
+
+      "selling_price": 340.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-018", 
+
+      "product_name": "Relay Module 5V 4-Channel", 
+
+      "category": "Components", 
+
+      "sub_category": "Switching Components", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 0, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 100, 
+
+      "safety_stock": 50, 
+
+      "max_stock_level": 400, 
+
+      "unit_cost": 145.00, 
+
+      "selling_price": 250.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-003", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-18", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "STOCKOUT — zero stock. No PO placed. Production line 2 impacted." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-019", 
+
+      "product_name": "Epoxy Resin 1kg", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Adhesives", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 42, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 30, 
+
+      "safety_stock": 15, 
+
+      "max_stock_level": 150, 
+
+      "unit_cost": 780.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-009", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": 180, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-20", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Shelf life sensitive — FIFO strictly required" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-020", 
+
+      "product_name": "Smart Sensor Hub v2", 
+
+      "category": "Finished Goods", 
+
+      "sub_category": "IoT Devices", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 62, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 40, 
+
+      "safety_stock": 20, 
+
+      "max_stock_level": 200, 
+
+      "unit_cost": 6200.00, 
+
+      "selling_price": 11000.00, 
+
+      "lead_time_days": 21, 
+
+      "primary_supplier": "SUP-001", 
+
+      "secondary_supplier": "SUP-007", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-18", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Premium product. Demand increasing — trending up 17% MoM." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-021", 
+
+      "product_name": "Circuit Board Assembly B2", 
+
+      "category": "Electronics", 
+
+      "sub_category": "PCB Assemblies", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 155, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 120, 
+
+      "safety_stock": 60, 
+
+      "max_stock_level": 500, 
+
+      "unit_cost": 980.00, 
+
+      "selling_price": 1650.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-001", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-08", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-022", 
+
+      "product_name": "OLED Display 1.3-inch", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Display Units", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 520, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 1000, 
+
+      "unit_cost": 185.00, 
+
+      "selling_price": 310.00, 
+
+      "lead_time_days": 18, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-25", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Healthy stock levels. Slow-moving — review if overstock." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-023", 
+
+      "product_name": "Silicone Cable 22AWG (100m)", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Wiring", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 65, 
+
+      "unit_of_measure": "spools", 
+
+      "reorder_point": 60, 
+
+      "safety_stock": 30, 
+
+      "max_stock_level": 250, 
+
+      "unit_cost": 210.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-22", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Near reorder point" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-024", 
+
+      "product_name": "ESD Packaging Bag (pack of 500)", 
+
+      "category": "Packaging", 
+
+      "sub_category": "ESD Protection", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 35, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 40, 
+
+      "safety_stock": 20, 
+
+      "max_stock_level": 150, 
+
+      "unit_cost": 680.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-004", 
+
+      "secondary_supplier": "SUP-010", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-15", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Below reorder point" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-025", 
+
+      "product_name": "Motor Driver IC L298N", 
+
+      "category": "Electronics", 
+
+      "sub_category": "ICs", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 680, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 300, 
+
+      "safety_stock": 150, 
+
+      "max_stock_level": 1500, 
+
+      "unit_cost": 125.00, 
+
+      "selling_price": 220.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-005", 
+
+      "secondary_supplier": "SUP-002", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-026", 
+
+      "product_name": "Voltage Regulator LM7805 (pack of 20)", 
+
+      "category": "Components", 
+
+      "sub_category": "Power Components", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 1450, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 1500, 
+
+      "unit_cost": 52.00, 
+
+      "selling_price": 85.00, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-003", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-04", 
+
+      "last_reorder_date": "2025-11-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "SEVERE OVERSTOCK — last ordered 5 months ago. 10× monthly demand." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-027", 
+
+      "product_name": "Bluetooth Module HC-05", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Communication Modules", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 190, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 600, 
+
+      "unit_cost": 165.00, 
+
+      "selling_price": 290.00, 
+
+      "lead_time_days": 12, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-028", 
+
+      "product_name": "Industrial Enclosure IP65 Medium", 
+
+      "category": "Components", 
+
+      "sub_category": "Enclosures", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 72, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 50, 
+
+      "safety_stock": 25, 
+
+      "max_stock_level": 200, 
+
+      "unit_cost": 1100.00, 
+
+      "selling_price": 1850.00, 
+
+      "lead_time_days": 15, 
+
+      "primary_supplier": "SUP-007", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-05", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Single source supplier — risk" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-029", 
+
+      "product_name": "Flux Pen No-Clean", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Assembly Materials", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 200, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 80, 
+
+      "safety_stock": 40, 
+
+      "max_stock_level": 400, 
+
+      "unit_cost": 95.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-009", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": 365, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-02-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-030", 
+
+      "product_name": "Industrial IoT Gateway v1", 
+
+      "category": "Finished Goods", 
+
+      "sub_category": "IoT Devices", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 18, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 25, 
+
+      "safety_stock": 12, 
+
+      "max_stock_level": 100, 
+
+      "unit_cost": 12500.00, 
+
+      "selling_price": 22000.00, 
+
+      "lead_time_days": 25, 
+
+      "primary_supplier": "SUP-007", 
+
+      "secondary_supplier": "SUP-001", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-15", 
+
+      "pending_inbound_qty": 20, 
+
+      "pending_inbound_po": "PO-2026-044", 
+
+      "notes": "Highest-value product. Below reorder point. PO in progress." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-031", 
+
+      "product_name": "PCB Blank FR4 Double-Sided 10x15cm", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "PCB Materials", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 720, 
+
+      "unit_of_measure": "sheets", 
+
+      "reorder_point": 300, 
+
+      "safety_stock": 150, 
+
+      "max_stock_level": 2000, 
+
+      "unit_cost": 28.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-032", 
+
+      "product_name": "Transformer 220V to 12V 10A", 
+
+      "category": "Components", 
+
+      "sub_category": "Power Components", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 0, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 60, 
+
+      "safety_stock": 30, 
+
+      "max_stock_level": 250, 
+
+      "unit_cost": 680.00, 
+
+      "selling_price": 1150.00, 
+
+      "lead_time_days": 12, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-005", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-25", 
+
+      "pending_inbound_qty": 100, 
+
+      "pending_inbound_po": "PO-2026-040", 
+
+      "notes": "STOCKOUT — PO placed but delayed by supplier. Assembly line 3 blocked." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-033", 
+
+      "product_name": "Fuse Holder Inline 5x20mm", 
+
+      "category": "Components", 
+
+      "sub_category": "Safety Components", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 3200, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 500, 
+
+      "safety_stock": 250, 
+
+      "max_stock_level": 3500, 
+
+      "unit_cost": 8.50, 
+
+      "selling_price": 15.00, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-003", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-04", 
+
+      "last_reorder_date": "2025-12-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Overstock — very low value, high quantity. Consider not reordering until consumed." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-034", 
+
+      "product_name": "Stepper Motor NEMA 17", 
+
+      "category": "Components", 
+
+      "sub_category": "Motors", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 88, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 80, 
+
+      "safety_stock": 40, 
+
+      "max_stock_level": 300, 
+
+      "unit_cost": 420.00, 
+
+      "selling_price": 720.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-007", 
+
+      "secondary_supplier": "SUP-005", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-20", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Near reorder point. Demand increasing from automation projects." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-035", 
+
+      "product_name": "Servo Motor SG90 Micro", 
+
+      "category": "Components", 
+
+      "sub_category": "Motors", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 450, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 1000, 
+
+      "unit_cost": 85.00, 
+
+      "selling_price": 150.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-007", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-05", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-036", 
+
+      "product_name": "Temperature Sensor DS18B20", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Sensors", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 280, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 800, 
+
+      "unit_cost": 75.00, 
+
+      "selling_price": 130.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-12", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-037", 
+
+      "product_name": "Ribbon Cable 40-pin 30cm", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Wiring", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 380, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 800, 
+
+      "unit_cost": 42.00, 
+
+      "selling_price": 72.00, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-003", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-02-28", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-038", 
+
+      "product_name": "Shipping Label Roll (500 labels)", 
+
+      "category": "Packaging", 
+
+      "sub_category": "Labels", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 22, 
+
+      "unit_of_measure": "rolls", 
+
+      "reorder_point": 30, 
+
+      "safety_stock": 15, 
+
+      "max_stock_level": 100, 
+
+      "unit_cost": 180.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 3, 
+
+      "primary_supplier": "SUP-010", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-18", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Below reorder point — needed for daily shipping operations" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-039", 
+
+      "product_name": "Crystal Oscillator 16MHz", 
+
+      "category": "Components", 
+
+      "sub_category": "Passive Components", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 920, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 400, 
+
+      "safety_stock": 200, 
+
+      "max_stock_level": 2000, 
+
+      "unit_cost": 12.00, 
+
+      "selling_price": 22.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-04", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-040", 
+
+      "product_name": "Smart Power Monitor v1", 
+
+      "category": "Finished Goods", 
+
+      "sub_category": "Energy Monitoring", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 35, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 30, 
+
+      "safety_stock": 15, 
+
+      "max_stock_level": 150, 
+
+      "unit_cost": 3800.00, 
+
+      "selling_price": 6500.00, 
+
+      "lead_time_days": 18, 
+
+      "primary_supplier": "SUP-001", 
+
+      "secondary_supplier": "SUP-007", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-22", 
+
+      "pending_inbound_qty": 50, 
+
+      "pending_inbound_po": "PO-2026-046", 
+
+      "notes": "Near reorder point. New product — demand ramping up." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-041", 
+
+      "product_name": "DIN Rail Terminal Block (pack of 10)", 
+
+      "category": "Components", 
+
+      "sub_category": "Connectors", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 45, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 80, 
+
+      "safety_stock": 40, 
+
+      "max_stock_level": 300, 
+
+      "unit_cost": 95.00, 
+
+      "selling_price": 165.00, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Below safety stock. Needs immediate reorder." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-042", 
+
+      "product_name": "Photocoupler PC817 (pack of 50)", 
+
+      "category": "Components", 
+
+      "sub_category": "ICs", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 340, 
+
+      "unit_of_measure": "packs", 
+
+      "reorder_point": 100, 
+
+      "safety_stock": 50, 
+
+      "max_stock_level": 500, 
+
+      "unit_cost": 68.00, 
+
+      "selling_price": 115.00, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-006", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-15", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-043", 
+
+      "product_name": "Heat Shrink Tube Kit Assorted", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Assembly Materials", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 110, 
+
+      "unit_of_measure": "kits", 
+
+      "reorder_point": 50, 
+
+      "safety_stock": 25, 
+
+      "max_stock_level": 250, 
+
+      "unit_cost": 145.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-009", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-044", 
+
+      "product_name": "Ethernet Module W5500", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Communication Modules", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 0, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 100, 
+
+      "safety_stock": 50, 
+
+      "max_stock_level": 400, 
+
+      "unit_cost": 245.00, 
+
+      "selling_price": 420.00, 
+
+      "lead_time_days": 14, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "STOCKOUT. No PO placed. Single source — supplier has had recent quality issues." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-045", 
+
+      "product_name": "Standoff Spacer M3 Kit (100pcs)", 
+
+      "category": "Components", 
+
+      "sub_category": "Hardware", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 180, 
+
+      "unit_of_measure": "kits", 
+
+      "reorder_point": 60, 
+
+      "safety_stock": 30, 
+
+      "max_stock_level": 300, 
+
+      "unit_cost": 55.00, 
+
+      "selling_price": 95.00, 
+
+      "lead_time_days": 5, 
+
+      "primary_supplier": "SUP-006", 
+
+      "secondary_supplier": "SUP-009", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-02-20", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-046", 
+
+      "product_name": "Current Sensor ACS712", 
+
+      "category": "Electronics", 
+
+      "sub_category": "Sensors", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 195, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 150, 
+
+      "safety_stock": 75, 
+
+      "max_stock_level": 600, 
+
+      "unit_cost": 110.00, 
+
+      "selling_price": 195.00, 
+
+      "lead_time_days": 12, 
+
+      "primary_supplier": "SUP-002", 
+
+      "secondary_supplier": "SUP-008", 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-08", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-047", 
+
+      "product_name": "Polycarbonate Sheet 3mm 60x40cm", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Enclosure Materials", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 95, 
+
+      "unit_of_measure": "sheets", 
+
+      "reorder_point": 50, 
+
+      "safety_stock": 25, 
+
+      "max_stock_level": 200, 
+
+      "unit_cost": 320.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 7, 
+
+      "primary_supplier": "SUP-009", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-18", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-048", 
+
+      "product_name": "Foam Insert Custom (per unit)", 
+
+      "category": "Packaging", 
+
+      "sub_category": "Protective Packaging", 
+
+      "warehouse": "WH-NORTH", 
+
+      "current_stock": 600, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 200, 
+
+      "safety_stock": 100, 
+
+      "max_stock_level": 1500, 
+
+      "unit_cost": 35.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-004", 
+
+      "secondary_supplier": "SUP-010", 
+
+      "abc_classification": "C", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": false, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-01", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "" 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-049", 
+
+      "product_name": "Smart Energy Meter v2", 
+
+      "category": "Finished Goods", 
+
+      "sub_category": "Energy Monitoring", 
+
+      "warehouse": "WH-WEST", 
+
+      "current_stock": 8, 
+
+      "unit_of_measure": "units", 
+
+      "reorder_point": 20, 
+
+      "safety_stock": 10, 
+
+      "max_stock_level": 80, 
+
+      "unit_cost": 8500.00, 
+
+      "selling_price": 15000.00, 
+
+      "lead_time_days": 21, 
+
+      "primary_supplier": "SUP-007", 
+
+      "secondary_supplier": "SUP-001", 
+
+      "abc_classification": "A", 
+
+      "shelf_life_days": null, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-06", 
+
+      "last_reorder_date": "2026-03-10", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "CRITICAL — below safety stock. High-value item. No PO in progress. Demand strong." 
+
+    }, 
+
+    { 
+
+      "sku_id": "SKU-050", 
+
+      "product_name": "Conformal Coating Spray 400ml", 
+
+      "category": "Raw Materials", 
+
+      "sub_category": "Assembly Materials", 
+
+      "warehouse": "WH-SOUTH", 
+
+      "current_stock": 48, 
+
+      "unit_of_measure": "cans", 
+
+      "reorder_point": 40, 
+
+      "safety_stock": 20, 
+
+      "max_stock_level": 150, 
+
+      "unit_cost": 520.00, 
+
+      "selling_price": null, 
+
+      "lead_time_days": 10, 
+
+      "primary_supplier": "SUP-009", 
+
+      "secondary_supplier": null, 
+
+      "abc_classification": "B", 
+
+      "shelf_life_days": 270, 
+
+      "batch_tracked": true, 
+
+      "last_stock_count_date": "2026-04-05", 
+
+      "last_reorder_date": "2026-03-15", 
+
+      "pending_inbound_qty": 0, 
+
+      "pending_inbound_po": null, 
+
+      "notes": "Shelf-life sensitive. Near reorder point." 
+
+    } 
+
+  ], 
+
+  "summary": { 
+
+    "total_sku_count": 50, 
+
+    "by_warehouse": { 
+
+      "WH-NORTH": 18, 
+
+      "WH-SOUTH": 17, 
+
+      "WH-WEST": 15 
+
+    }, 
+
+    "by_category": { 
+
+      "Electronics": 14, 
+
+      "Components": 16, 
+
+      "Raw Materials": 10, 
+
+      "Packaging": 5, 
+
+      "Finished Goods": 5 
+
+    }, 
+
+    "by_status": { 
+
+      "stockout": ["SKU-018", "SKU-032", "SKU-044"], 
+
+      "critical_below_safety_stock": ["SKU-001", "SKU-005", "SKU-015", "SKU-041", "SKU-049"], 
+
+      "below_reorder_point": ["SKU-007", "SKU-010", "SKU-023", "SKU-024", "SKU-030", "SKU-034", "SKU-038", "SKU-040", "SKU-050"], 
+
+      "healthy": ["SKU-002", "SKU-003", "SKU-008", "SKU-009", "SKU-011", "SKU-012", "SKU-013", "SKU-014", "SKU-017", "SKU-019", "SKU-020", "SKU-021", "SKU-025", "SKU-027", "SKU-028", "SKU-029", "SKU-031", "SKU-035", "SKU-036", "SKU-037", "SKU-039", "SKU-042", "SKU-043", "SKU-045", "SKU-046", "SKU-047", "SKU-048"], 
+
+      "overstock": ["SKU-006", "SKU-016", "SKU-022", "SKU-026", "SKU-033"] 
+
+    }, 
+
+    "total_inventory_value_inr": 4287650.00, 
+
+    "single_source_risk_skus": ["SKU-002", "SKU-005", "SKU-010", "SKU-015", "SKU-019", "SKU-024", "SKU-028", "SKU-029", "SKU-037", "SKU-043", "SKU-044", "SKU-047", "SKU-050"] 
+
+  } 
+
+} 
